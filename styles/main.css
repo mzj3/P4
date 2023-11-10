@@ -1,0 +1,192 @@
+/* DEVELOPER: Maximilian Jacob, IS117-001, Fall 2023 */
+html {
+    height: 100%;
+    font-size: 120%;
+}
+/* -----------------------------VARIABLES--------------------------------- */
+:root{
+    /* Color Variables */
+    --d-green: rgb(54, 93, 57);
+    --l-green: rgb(89, 155, 95);
+}
+#webtitle {
+    text-align: center;
+    font-size: 400%;
+    margin: 0 auto;
+}
+@media (max-width: 500px) {
+    #webtitle {
+        font-size: 200%;
+    }
+}
+/* -----------------------------TITLE ANIMATION ELEMENTS--------------------------------- */
+.title-span {
+    opacity: 0;
+    animation: fadeIn .5s ease-in-out forwards;
+}
+
+.title-span:nth-child(1) {
+    animation-delay: .5s;
+}
+
+.title-span:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.title-span:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+/* -----------------------------NAVBAR ELEMENTS--------------------------------- */
+nav {
+    height: 60px;
+    width: 95%;
+    margin: 0 auto;
+    opacity: 0;
+    background-color: var(--l-green);
+    animation: fadeIn .5s ease-in-out forwards;
+    animation-delay: 2s;
+}
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+.nav-link {
+    font-size: 110%;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: color 0.2s, font-size 0.2s, text-shadow 0.2s, box-shadow 0.3s;
+    animation: fadeIn 1s ease-in-out forwards, slideIn 1s ease-out;
+    animation-delay: 1s;
+}
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+    font-size: 125%;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    box-shadow: inset 100px 0 0 0 #ffffff1a;
+    transition: .2s;
+}
+
+/* -----------------------------DROPDOWN ELEMENTS--------------------------------- */
+.dropdown-menu {
+    background-color: var(--d-green); /* Background color */
+    border: none; /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    opacity: 0; /* Start with zero opacity */
+    animation: fadeInDropdown 0.25s ease-in-out forwards; 
+    z-index: 1000;
+    position: absolute;
+}
+
+.dropdown-item {
+    opacity: 1  ;
+    color: white; /* Text color */
+    z-index: 1000;
+}
+
+.dropdown-item:hover {
+    opacity: 1;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1); /* Background color on hover */
+    z-index: 1000;
+    
+}
+
+/* ------------------------------------------------- Background --------------------------------------- */
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgb(221,221,221);
+    background: rgb(231,231,231);
+    background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(252,252,252,1) 24%, rgba(255,255,255,1) 92%, rgba(231,231,231,1) 100%);
+}
+
+/* ----------------------------------------Main content on Page -------------------------------------------------*/
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+main h2 {
+    opacity: 0;
+    color: var(--l-green);
+    animation: fadeIn 1s ease-in-out forwards, slideIn 1s ease-out;
+    animation-delay: 2.5s;
+}
+main p {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards, slideIn 3s ease-out;
+    animation-delay: 3s;
+}
+main h2, main p {
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* Makes Text Adjust properly when a conditional is met */
+@media (max-width: 768px) {
+    main h2,
+    main p {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
+}
+
+footer p {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2.5%;
+    background-color: var(--l-green);
+	text-align: center;
+	color: rgb(255, 255, 255);
+	padding: 1em 0;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards, slideIn 1s ease-out;
+    animation-delay: 4s;
+}
+/* ------------------------------------------------------CUSTOM FONT--------------------------------------------- */
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('UbuntuMono-R.ttf') format('truetype'); /* Specify the correct format */
+}   
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+/* ------------------------------------------------------ANIMATION KEYFRAMES--------------------------------------------- */
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with zero opacity */
+        
+    }
+    to {
+        opacity: 1; /* End with full opacity */
+        z-index: 1;
+    }
+}
+@keyframes fadeInDropdown {
+    0%{
+        opacity: 0; /* Start with zero opacity */
+        transform: translate(10px, 0px); 
+    }
+    40% {
+        opacity: .5; /* End with full opacity */
+        transform: translate(5px, 10px); 
+    }
+    100% {
+        opacity: 1; /* End with full opacity */
+        transform: translate(0px, 0px); 
+        z-index: 1000;
+    }
+}
+@keyframes slideIn {
+    0%   { 
+    transform: translateY(200%); 		
+    z-index: 1;
+    }
+    50% { 
+    transform: translateY(0%); 
+    z-index: 1;
+}
+}
