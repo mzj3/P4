@@ -2,6 +2,7 @@
 html {
     height: 100%;
     font-size: 120%;
+    font-family: 'Ubuntu', sans-serif;
 }
 /* -----------------------------VARIABLES--------------------------------- */
 :root{
@@ -39,16 +40,19 @@ html {
 
 /* -----------------------------NAVBAR ELEMENTS--------------------------------- */
 nav {
-    height: 60px;
     width: 95%;
     margin: 0 auto;
     opacity: 0;
     background-color: var(--l-green);
     animation: fadeIn .5s ease-in-out forwards;
-    animation-delay: 2s;
+    animation-delay: .5s;
 }
-.nav-item:hover .dropdown-menu {
-    display: block;
+.nav-item {
+    color: white;
+}
+/* Override Bootstrap default text color for navbar links */
+.navbar-nav .nav-link {
+    color: white !important;
 }
 .nav-link {
     font-size: 110%;
@@ -62,9 +66,14 @@ nav {
     color: rgb(255, 255, 255);
     font-size: 125%;
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
-    box-shadow: inset 100px 0 0 0 #ffffff1a;
+    box-shadow: inset 120px 0 0 0 #ffffff1a;
     transition: .2s;
 }
+.navbar-toggler {
+    color: white !important;
+    border: none;
+}
+
 
 /* -----------------------------DROPDOWN ELEMENTS--------------------------------- */
 .dropdown-menu {
@@ -142,17 +151,17 @@ footer p {
 	padding: 1em 0;
 
     opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards, slideIn 1s ease-out;
+    animation: fadeIn 1.5s ease-in-out forwards, slideIn 1.5s ease-out;
     animation-delay: 4s;
 }
 /* ------------------------------------------------------CUSTOM FONT--------------------------------------------- */
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('UbuntuMono-R.ttf') format('truetype'); /* Specify the correct format */
-}   
-* {
-    font-family: 'Ubuntu', sans-serif;
-}
+    @font-face {
+        font-family: 'Ubuntu';
+        src: url('UbuntuMono-R.ttf') format('truetype'); /* Specify the correct format */
+    }
+    * {
+        font-family: 'Ubuntu', sans-serif;
+    }
 /* ------------------------------------------------------ANIMATION KEYFRAMES--------------------------------------------- */
 /* Define the fadeIn animation */
 @keyframes fadeIn {
