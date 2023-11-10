@@ -45,7 +45,7 @@ nav {
     opacity: 0;
     background-color: var(--l-green);
     animation: fadeIn .5s ease-in-out forwards;
-    animation-delay: .5s;
+    animation-delay: 1.75s;
 }
 .nav-item {
     color: white;
@@ -73,8 +73,34 @@ nav {
     color: white !important;
     border: none;
 }
-
-
+/* -----------------------------NAVBAR ANIMATION--------------------------------- */
+:root { 
+    --base-delay: 2.0s;  /* Adjust this value for different base delay start */
+    
+}
+.navani1 {
+    animation-delay: calc(var(--base-delay) + 0.1s);
+}
+.navani2 {
+    animation-delay: calc(var(--base-delay) + 0.2s);
+}
+.navani3 {
+    animation-delay: calc(var(--base-delay) + 0.3s);
+}
+.navani4 {
+    animation-delay: calc(var(--base-delay) + 0.4s);
+}
+.navani5 {
+    animation-delay: calc(var(--base-delay) + 0.5s);
+}
+.navani6 {
+    animation-delay: calc(var(--base-delay) + 0.6s);
+}
+@media (max-width: 768px) { /*Set for Quiker animation mobile*/
+    :root {
+        --base-delay: 0.0s;
+    }
+}
 /* -----------------------------DROPDOWN ELEMENTS--------------------------------- */
 .dropdown-menu {
     background-color: var(--d-green); /* Background color */
