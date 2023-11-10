@@ -20,9 +20,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    
-    <!--Navbar-->
-    <nav class="justify-content-center navbar navbar-expand-lg navbar-light" style="background-color: var(--l-green)">
+    <!--Navbar WORKS-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--l-green)">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="images/customBurger.png" alt="Custom Toggle Icon">
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown" >
+                    <a class="nav-link active" href="home.html" style="animation-delay: 0.8s;">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="animation-delay: 0.9s;" >
+                      Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Introduction</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Ubuntu Server</a></li>
+                      <li><a class="dropdown-item" href="#">Raspberry Pi</a></li>
+                      <li><a class="dropdown-item" href="#">This Website</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="animation-delay: 1.0s;" >
+                      About Me
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Introduction</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Hobbies</a></li>
+                      <li><a class="dropdown-item" href="#">Skills</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="animation-delay: 1.1s;" >
+                      Career
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Introduction</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Geek Squad</a></li>
+                      <li><a class="dropdown-item" href="#">Best Buy</a></li>
+                      <li><a class="dropdown-item" href="#">Spring Lake Bath & Tennis Club</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="animation-delay: 1.2s;" >
+                      Education
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Introduction</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">College Degree</a></li>
+                      <li><a class="dropdown-item" href="#">Notable Classes</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link active" href="contact.html" style="animation-delay: 1.3s;">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+
+    <!--Navbar ORIGINAL-->
+    <!-- <nav class="justify-content-center navbar navbar-expand-lg navbar-light" style="background-color: var(--l-green)">
         <ul class="nav">
             <li class="nav-item dropdown" >
                 <a class="nav-link active" href="home.html" style="animation-delay: 1.8s;">
@@ -74,7 +144,7 @@
                 </a>
             </li>
         </ul>
-    </nav>
+    </nav> -->
 </head>
 <body>
 <main>
