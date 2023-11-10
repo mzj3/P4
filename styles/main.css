@@ -15,7 +15,7 @@ html {
     font-size: 400%;
     margin: 0 auto;
 }
-@media (max-width: 1080px) {
+@media (max-width: 768px) {
     #webtitle {
         font-size: 200%;
     }
@@ -96,7 +96,7 @@ nav {
 .navani6 {
     animation-delay: calc(var(--base-delay) + 0.6s);
 }
-@media (max-width: 1080px) { /*Set for Quiker animation mobile*/
+@media (max-width: 768px) { /*Set for Quiker animation mobile*/
     :root {
         --base-delay: 0.0s;
     }
@@ -160,7 +160,7 @@ main h2, main p {
 }
 
 /* Makes Text Adjust properly when a conditional is met */
-@media (max-width: 1080px) {
+@media (max-width: 768px) {
     main h2,
     main p {
         width: 90%; /* Adjust the width for smaller screens */
@@ -224,4 +224,20 @@ footer p {
     transform: translateY(0%); 
     z-index: 1;
 }
+}
+/* ------------------------------------------MEDIA QUERIES--------------------------------------- */
+@media (max-width: 768px) {
+    
+    /* Adjust the width for smaller screens */
+    main h2, main p {
+        width: 90%; 
+    }
+    /*Set for Quiker animation mobile*/
+    :root {
+        --base-delay: 0.0s;
+    }
+    /*Make Logo smaller*/
+    #webtitle { 
+        font-size: 200%;
+    }
 }
