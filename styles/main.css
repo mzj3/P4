@@ -9,17 +9,16 @@ html {
     /* Color Variables */
     --d-green: rgb(54, 93, 57);
     --l-green: rgb(89, 155, 95);
+
+    /* --d-green: rgb(54, 57, 93);
+    --l-green: rgb(96, 89, 155); */
 }
 #webtitle {
     text-align: center;
     font-size: 400%;
     margin: 0 auto;
 }
-@media (max-width: 768px) {
-    #webtitle {
-        font-size: 200%;
-    }
-}
+
 /* -----------------------------TITLE ANIMATION ELEMENTS--------------------------------- */
 .title-span {
     opacity: 0;
@@ -70,9 +69,10 @@ nav {
     transition: .2s;
 }
 .navbar-toggler {
-    color: white !important;
+    color: var(--d-green) !important;
     border: none;
 }
+
 /* -----------------------------NAVBAR ANIMATION--------------------------------- */
 :root { 
     --base-delay: 2.0s;  /* Adjust this value for different base delay start */
@@ -96,11 +96,7 @@ nav {
 .navani6 {
     animation-delay: calc(var(--base-delay) + 0.6s);
 }
-@media (max-width: 768px) { /*Set for Quiker animation mobile*/
-    :root {
-        --base-delay: 0.0s;
-    }
-}
+
 /* -----------------------------DROPDOWN ELEMENTS--------------------------------- */
 .dropdown-menu {
     background-color: var(--d-green); /* Background color */
@@ -157,14 +153,6 @@ main h2, main p {
     width: 70%;
     margin: 0 auto;
     z-index: 1;
-}
-
-/* Makes Text Adjust properly when a conditional is met */
-@media (max-width: 768px) {
-    main h2,
-    main p {
-        width: 90%; /* Adjust the width for smaller screens */
-    }
 }
 
 footer p {
@@ -225,19 +213,46 @@ footer p {
     z-index: 1;
 }
 }
-/* ------------------------------------------MEDIA QUERIES--------------------------------------- */
+/* ... (your existing styles above) ... */
+
+/* Adjustments for smaller screens */
 @media (max-width: 768px) {
-    
-    /* Adjust the width for smaller screens */
-    main h2, main p {
-        width: 90%; 
-    }
-    /*Set for Quiker animation mobile*/
+
+    /*Set for Quicker animation mobile*/
     :root {
         --base-delay: 0.0s;
     }
-    /*Make Logo smaller*/
+    /* Make Logo smaller */
     #webtitle { 
-        font-size: 200%;
+        font-size: 250%;
+    }
+    .nav-link{
+        padding-left: 10px;
+        margin: 0 auto;
+    }
+    .nav-link:hover {
+        box-shadow: inset 140px 0 0 0 #ffffff1a;
+    }
+    .dropdown-menu {
+        background-color: var(--l-green); /* Background color */
+        border: none; /* Remove default border */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        opacity: 0; /* Start with zero opacity */
+        animation: fadeInDropdown 0.0s ease-in-out forwards; 
+        border-radius: 0;
+    }
+    .navbar-light .navbar-collapse.show {
+        background-color: var(--d-green);
+        transition: 2s;
+    }
+    /* Adjust the width for smaller screens */
+    main h2, main p {
+        width: 80%; 
+    }
+    main h2 {
+        text-align: center;
+    }
+    main p {
+        font-size: 100%; 
     }
 }
