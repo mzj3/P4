@@ -409,8 +409,6 @@ footer p {
     body {
         height: 100%;
         margin: 0;
-
-
         background: linear-gradient(-45deg, var(--lGradient) 0%, var(--dGradient) 100%);
         background-size: 400% 400%;
     }
@@ -430,7 +428,7 @@ footer p {
     }
 
     .custom-card {
-        max-width: 450px;
+        max-width: 400px;
         background-color: var(--secondary);
         /* Custom background color */
         border: none;
@@ -439,5 +437,12 @@ footer p {
         /* Custom border radius */
         margin-bottom: 2px;
         /* Custom margin */
+    }
+
+    .custom-card img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        max-height: 100%;
+
     }
 }
