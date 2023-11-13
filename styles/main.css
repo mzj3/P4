@@ -428,7 +428,7 @@ footer p {
     }
 
     .custom-card {
-        max-width: 125px;
+        max-width: 90%;
         background-color: var(--secondary);
         /* Custom background color */
         border: none;
@@ -442,7 +442,5 @@ footer p {
     .custom-card img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        max-height: 100%;
-
     }
 }
