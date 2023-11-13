@@ -5,7 +5,7 @@
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 400%;
 	z-index: -1;
 	overflow: hidden;
 }
@@ -18,7 +18,7 @@
 	height: 20px;
 	background: rgba(192, 192, 192, 0.1);
 	animation: animate 25s linear infinite;
-	bottom: calc(-150px - 40vh);
+	bottom: -150px;
 }
 
 /* Triangle */
