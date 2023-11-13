@@ -229,7 +229,7 @@ h5 a:hover {
 
 /* Custom styles for the card */
 .custom-card {
-    max-width: 700px;
+    max-width: 790px;
     background-color: var(--primary);
     /* Custom background color */
     border: none;
@@ -241,7 +241,7 @@ h5 a:hover {
 }
 
 .custom-card .card-body {
-    padding: 2px;
+    padding-left: 10px;
 }
 
 .custom-card .card-title {
@@ -267,6 +267,11 @@ h5 a:hover {
 .custom-card .card-body h5,
 .custom-card .card-body p {
     margin-left: 10px;
+}
+.custom-card {
+    margin-left: 10px;
+    color: var(--p-text);
+    text-align: left;
 }
 
 footer p {
@@ -419,7 +424,7 @@ footer p {
         height: 100%;
         margin: 0;
         background: linear-gradient(-45deg, var(--lGradient) 0%, var(--dGradient) 100%);
-        background-size: 400% 900%;
+        background-size: 900% 900%;
     }
 
     /* Adjust the width for smaller screens */
