@@ -428,7 +428,7 @@ footer p {
     }
 
     .custom-card {
-        max-width: 400px;
+        max-width: 325px;
         background-color: var(--secondary);
         /* Custom background color */
         border: none;
