@@ -219,6 +219,14 @@ main p {
     z-index: 1;
 }
 
+h5 a {
+    color: white;
+}
+h5 a:hover {
+    color: var(--secondary);
+}
+
+
 /* Custom styles for the card */
 .custom-card {
     max-width: 700px;
@@ -430,7 +438,6 @@ footer p {
 
     .custom-card {
         max-width: 90%;
-        background-color: var(--secondary);
         /* Custom background color */
         border: none;
         /* Custom border color */
@@ -441,10 +448,13 @@ footer p {
     }
 
     .custom-card img {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-radius: none;
     }
     .carousel-caption {
         display:contents;
+    }
+
+    cp {
+        font-size: 80%;
     }
 }
