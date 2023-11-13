@@ -222,7 +222,7 @@ main p {
 /* Custom styles for the card */
 .custom-card {
     max-width: 700px;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     /* Custom background color */
     border: none;
     /* Custom border color */
@@ -359,8 +359,9 @@ footer p {
         background-position: 100% 50%;
     }
 }
-
-/* ... (your existing styles above) ... */
+.carousel-caption {
+    display:contents;
+}
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
@@ -410,7 +411,7 @@ footer p {
         height: 100%;
         margin: 0;
         background: linear-gradient(-45deg, var(--lGradient) 0%, var(--dGradient) 100%);
-        background-size: 400% 400%;
+        background-size: 400% 900%;
     }
 
     /* Adjust the width for smaller screens */
@@ -442,5 +443,8 @@ footer p {
     .custom-card img {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+    }
+    .carousel-caption {
+        display:contents;
     }
 }
