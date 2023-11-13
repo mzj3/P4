@@ -225,7 +225,11 @@ h5 a {
 h5 a:hover {
     color: var(--secondary);
 }
-
+cp {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards, slideIn 2s ease-out;
+    animation-delay: 1s;
+}
 
 /* Custom styles for the card */
 .custom-card {
@@ -273,6 +277,7 @@ h5 a:hover {
     color: var(--p-text);
     text-align: left;
 }
+
 
 footer p {
     height: 70px;
