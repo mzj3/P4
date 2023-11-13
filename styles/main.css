@@ -4,8 +4,9 @@ html {
     font-size: 120%;
     font-family: 'Ubuntu', sans-serif;
 }
+
 /* -----------------------------VARIABLES--------------------------------- */
-:root{
+:root {
     /* Primary and Secondary Colors + more*/
     --primary: rgb(54, 57, 93);
     --secondary: rgb(96, 89, 155);
@@ -14,44 +15,47 @@ html {
     /* Gradient Colors */
     --dGradient: var(--primary);
     --lGradient: rgb(0, 0, 0);
-    
+
 
     /* --primary: rgb(54, 57, 93);
     --secondary: rgb(96, 89, 155); */
 }
+
 #webtitle {
     text-align: center;
     font-size: 400%;
     margin: 0 auto;
 }
+
 /* ----------------------------CUSTOM SCROLL BAR-------------------------- */
 /* Doesn't work on Firefox or Edge :( [Test in Chrome] */
-  /* width */
-  ::-webkit-scrollbar {
+/* width */
+::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: var(--primary); 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--secondary); 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--primary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondary);
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary); 
-  }
-  .poem {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+}
+
+.poem {
     overflow: scroll;
     scrollbar-color: red orange;
     scrollbar-width: thin;
-  }
-  
+}
+
 /* -----------------------------TITLE ANIMATION ELEMENTS--------------------------------- */
 .title-span {
     opacity: 0;
@@ -80,13 +84,16 @@ nav {
     animation: fadeIn .5s ease-in-out forwards;
     animation-delay: 1.75s;
 }
+
 .nav-item {
     color: var(--p-text);
 }
+
 /* Override Bootstrap default text color for navbar links */
 .navbar-nav .nav-link {
     color: var(--p-text) !important;
 }
+
 .nav-link {
     font-size: 110%;
     color: rgb(255, 255, 255);
@@ -95,6 +102,7 @@ nav {
     animation: fadeIn 1s ease-in-out forwards, slideIn 1s ease-out;
     animation-delay: 1s;
 }
+
 .nav-link:hover {
     color: rgb(255, 255, 255);
     font-size: 125%;
@@ -102,58 +110,72 @@ nav {
     box-shadow: inset 120px 0 0 0 #ffffff1a;
     transition: .2s;
 }
+
 .navbar-toggler {
     color: var(--primary) !important;
     border: none;
 }
 
 /* -----------------------------NAVBAR ANIMATION--------------------------------- */
-:root { 
-    --base-delay: 2.0s;  /* Adjust this value for different base delay start */
-    
+:root {
+    --base-delay: 2.0s;
+    /* Adjust this value for different base delay start */
+
 }
+
 .navani1 {
     animation-delay: calc(var(--base-delay) + 0.1s);
 }
+
 .navani2 {
     animation-delay: calc(var(--base-delay) + 0.2s);
 }
+
 .navani3 {
     animation-delay: calc(var(--base-delay) + 0.3s);
 }
+
 .navani4 {
     animation-delay: calc(var(--base-delay) + 0.4s);
 }
+
 .navani5 {
     animation-delay: calc(var(--base-delay) + 0.5s);
 }
+
 .navani6 {
     animation-delay: calc(var(--base-delay) + 0.6s);
 }
 
 /* -----------------------------DROPDOWN ELEMENTS--------------------------------- */
 .dropdown-menu {
-    background-color: var(--primary); /* Background color */
-    border: none; /* Remove default border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-    opacity: 0; /* Start with zero opacity */
-    animation: fadeInDropdown 0.25s ease-in-out forwards; 
+    background-color: var(--primary);
+    /* Background color */
+    border: none;
+    /* Remove default border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+    opacity: 0;
+    /* Start with zero opacity */
+    animation: fadeInDropdown 0.25s ease-in-out forwards;
     z-index: 1000;
     position: absolute;
 }
 
 .dropdown-item {
-    opacity: 1  ;
-    color: var(--p-text); /* Text color */
+    opacity: 1;
+    color: var(--p-text);
+    /* Text color */
     z-index: 1000;
 }
 
 .dropdown-item:hover {
     opacity: 1;
     color: var(--p-text);
-    background-color: rgba(255, 255, 255, 0.1); /* Background color on hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Background color on hover */
     z-index: 1000;
-    
+
 }
 
 /* ------------------------------------------------- Background --------------------------------------- */
@@ -163,34 +185,80 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-   
 
-    background: linear-gradient(-45deg, var(--dGradient) 0%,  var(--lGradient) 100%);
+
+    background: linear-gradient(-45deg, var(--dGradient) 0%, var(--lGradient) 100%);
     background-size: 400% 400%;
     animation: gradientInf 90s ease-in-out infinite;
 }
 
 /* ----------------------------------------Main content on Page -------------------------------------------------*/
 main {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
 }
+
 main h2 {
     opacity: 0;
     color: var(--secondary);
     animation: fadeIn 1s ease-in-out forwards, slideIn 1s ease-out;
     animation-delay: 2.5s;
 }
+
 main p {
     color: var(--p-text);
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards, slideIn 3s ease-out;
     animation-delay: 3s;
 }
-main h2, main p {
+
+main h2,
+main p {
     width: 70%;
     margin: 0 auto;
     z-index: 1;
+}
+
+/* Custom styles for the card */
+.custom-card {
+    max-width: 700px;
+    background-color: var(--secondary);
+    /* Custom background color */
+    border: none;
+    /* Custom border color */
+    border-radius: 10px;
+    /* Custom border radius */
+    margin-bottom: 0px;
+    /* Custom margin */
+}
+
+.custom-card .card-body {
+    padding: 2px;
+}
+
+.custom-card .card-title {
+    color: var(--p-text);
+    /* Custom text color for the title */
+    font-size: 1.5rem;
+    /* Custom font size for the title */
+}
+
+.custom-card img {
+    border-top-left-radius: 10px;
+    /* Adjust rounded corners for the image */
+    border-bottom-left-radius: 10px;
+    max-height: 100%;
+
+}
+
+.custom-card .card-text {
+    color: var(--p-text);
+    /* Custom text color for the content */
+}
+
+.custom-card .card-body h5,
+.custom-card .card-body p {
+    margin-left: 10px;
 }
 
 footer p {
@@ -199,78 +267,99 @@ footer p {
     margin: 0 auto;
     margin-bottom: 2.5%;
     background-color: var(--secondary);
-	text-align: center;
-	color: rgb(255, 255, 255);
-	padding: 1em 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1em 0;
 
     opacity: 0;
     animation: fadeIn 1.5s ease-in-out forwards, slideIn 1.5s ease-out;
     animation-delay: 4s;
 }
+
 /* ------------------------------------------------------CUSTOM FONT--------------------------------------------- */
-    @font-face {
-        font-family: 'Ubuntu';
-        src: url('UbuntuMono-R.ttf') format('truetype'); /* Specify the correct format */
-    }
-    * {
-        font-family: 'Ubuntu', sans-serif;
-    }
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('UbuntuMono-R.ttf') format('truetype');
+    /* Specify the correct format */
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 /* ------------------------------------------------------ANIMATION KEYFRAMES--------------------------------------------- */
 /* Define the fadeIn animation */
 @keyframes fadeIn {
     from {
-        opacity: 0; /* Start with zero opacity */
-        
+        opacity: 0;
+        /* Start with zero opacity */
+
     }
+
     to {
-        opacity: 1; /* End with full opacity */
+        opacity: 1;
+        /* End with full opacity */
         z-index: 1;
     }
 }
+
 @keyframes fadeInDropdown {
-    0%{
-        opacity: 0; /* Start with zero opacity */
-        transform: translate(10px, 0px); 
+    0% {
+        opacity: 0;
+        /* Start with zero opacity */
+        transform: translate(10px, 0px);
     }
+
     40% {
-        opacity: .5; /* End with full opacity */
-        transform: translate(5px, 10px); 
+        opacity: .5;
+        /* End with full opacity */
+        transform: translate(5px, 10px);
     }
+
     100% {
-        opacity: 1; /* End with full opacity */
-        transform: translate(0px, 0px); 
+        opacity: 1;
+        /* End with full opacity */
+        transform: translate(0px, 0px);
         z-index: 1000;
     }
 }
+
 @keyframes slideIn {
-        0%   { 
-        transform: translateY(200%); 		
+    0% {
+        transform: translateY(200%);
         z-index: 1;
-        }
-        50% { 
-        transform: translateY(0%); 
+    }
+
+    50% {
+        transform: translateY(0%);
         z-index: 1;
     }
 }
+
 @keyframes gradientInf {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
+
 @keyframes gradientIntro {
     0% {
         background-position: 0% 50%;
     }
+
     100% {
         background-position: 100% 50%;
     }
 }
+
 /* ... (your existing styles above) ... */
 
 /* Adjustments for smaller screens */
@@ -280,48 +369,75 @@ footer p {
     :root {
         --base-delay: 0.0s;
     }
+
     /* Make Logo smaller */
-    #webtitle { 
+    #webtitle {
         font-size: 250%;
     }
+
     nav {
-        height:auto;
+        height: auto;
     }
-    .nav-link{
+
+    .nav-link {
         padding-left: 10px;
         margin: 0 auto;
     }
+
     .nav-link:hover {
         box-shadow: inset 140px 0 0 0 #ffffff1a;
     }
+
     .dropdown-menu {
-        background-color: var(--secondary); /* Background color */
-        border: none; /* Remove default border */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-        opacity: 0; /* Start with zero opacity */
-        animation: fadeInDropdown 0.0s ease-in-out forwards; 
+        background-color: var(--secondary);
+        /* Background color */
+        border: none;
+        /* Remove default border */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Add a subtle box shadow */
+        opacity: 0;
+        /* Start with zero opacity */
+        animation: fadeInDropdown 0.0s ease-in-out forwards;
         border-radius: 0;
     }
+
     .navbar-light .navbar-collapse.show {
         background-color: var(--primary);
         transition: 1.5s;
     }
+
     body {
         height: 100%;
         margin: 0;
-        
-    
+
+
         background: linear-gradient(-45deg, var(--lGradient) 0%, var(--dGradient) 100%);
         background-size: 400% 400%;
     }
+
     /* Adjust the width for smaller screens */
-    main h2, main p {
-        width: 80%; 
+    main h2,
+    main p {
+        width: 80%;
     }
+
     main h2 {
         text-align: center;
     }
+
     main p {
-        font-size: 100%; 
+        font-size: 100%;
+    }
+
+    .custom-card {
+        max-width: 450px;
+        background-color: var(--secondary);
+        /* Custom background color */
+        border: none;
+        /* Custom border color */
+        border-radius: 10px;
+        /* Custom border radius */
+        margin-bottom: 2px;
+        /* Custom margin */
     }
 }

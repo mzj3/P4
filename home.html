@@ -1,130 +1,236 @@
-<!-- DEVELOPER: Maximilian Jacob, IS117-001, Fall 2023 -->  
+<!-- DEVELOPER: Maximilian Jacob, IS117-001, Fall 2023 -->
 <!DOCTYPE html>
 <html>
+
 <head style="display:none">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>maximilian.bio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maximilian.bio</title>
 
-    <!-- Link to favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <br>
-    <h1 id="webtitle">
-        <span class="title-span" style="color:  var(--secondary);">maximilian</span><span class="title-span" style="color: var(--primary);">.</span><span class="title-span" style="color:  var(--secondary);">bio</span>
-    </h1>
-    <br>
+  <!-- Link to favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <br>
+  <h1 id="webtitle">
+    <span class="title-span" style="color:  var(--secondary);">maximilian</span><span class="title-span"
+      style="color: var(--primary);">.</span><span class="title-span" style="color:  var(--secondary);">bio</span>
+  </h1>
+  <br>
 
-    <!--Link to Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="styles/main.css" rel="stylesheet">
-    <link href="styles/shapes.css" rel="stylesheet">
-    
-    <!-- Custom Font from Google (Ubunutu) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <!--Link to Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Link to Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color: var(--secondary)">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="images/customBurger.png" alt="Custom Toggle Icon" width="30" height="30"> 
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown" >
-                    <a class="navani1 nav-link active" href="home.html">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="navani2 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                      Projects
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Introduction</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Ubuntu Server</a></li>
-                      <li><a class="dropdown-item" href="#">Raspberry Pi</a></li>
-                      <li><a class="dropdown-item" href="#">This Website</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="navani3 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                      About Me
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Introduction</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Hobbies</a></li>
-                      <li><a class="dropdown-item" href="#">Skills</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="navani4 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                      Career
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Introduction</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Geek Squad</a></li>
-                      <li><a class="dropdown-item" href="#">Best Buy</a></li>
-                      <li><a class="dropdown-item" href="#">Spring Lake Bath & Tennis Club</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="navani5 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                      Education
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Introduction</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">College Degree</a></li>
-                      <li><a class="dropdown-item" href="#">Notable Classes</a></li>
-                    </ul>
-                  </li>
-                <li class="nav-item dropdown" >
-                    <a class="navani6 nav-link active" href="contact.html">
-                        Contact
-                    </a>
-                </li>
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/shapes.css" rel="stylesheet">
+
+  <!-- Custom Font from Google (Ubunutu) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md navbar-light" style="background-color: var(--secondary)">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="images/customBurger.png" alt="Custom Toggle Icon" width="30" height="30">
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="navani1 nav-link active" href="home.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navani2 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Introduction</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Ubuntu Server</a></li>
+              <li><a class="dropdown-item" href="#">Raspberry Pi</a></li>
+              <li><a class="dropdown-item" href="#">This Website</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navani3 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About Me
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Introduction</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Hobbies</a></li>
+              <li><a class="dropdown-item" href="#">Skills</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navani4 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Career
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Introduction</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Geek Squad</a></li>
+              <li><a class="dropdown-item" href="#">Best Buy</a></li>
+              <li><a class="dropdown-item" href="#">Spring Lake Bath & Tennis Club</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navani5 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Education
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Introduction</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">College Degree</a></li>
+              <li><a class="dropdown-item" href="#">Notable Classes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navani6 nav-link active" href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </head>
+
 <body style="display:none">
-    <!-- Floating Shapes -->
-    <ul class='shapes'>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+  <!-- Floating Shapes -->
+  <ul class='shapes'>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
   <main>
     <!-- Floating Shapes -->
-      <br>
-      <h2>
-          <strong>Welcome</strong>
-      </h2>
-          <p>Welcome to my website, a dynamic and interactive representation of my professional journey—a Resume++ that goes beyond the traditional. Navigate through the various sections to explore my story. The "Home" page serves as a central hub, offering a glimpse into the essence of my digital presence. On the "Projects" page, discover the diverse array of endeavors that have shaped my skills and passions. "About Me" provides an in-depth look at the person behind the professional, delving into my background, values, and aspirations. Journey through the "Career" and "Education" sections to gain insights into my professional milestones and academic pursuits. Lastly, on the "Contact" page, find the means to connect with me directly. This website is more than a static resume; it's an evolving narrative of my experiences and a testament to the multifaceted individual I am, inviting you to engage with my story beyond the confines of a traditional CV. <br>-<i> A blurb I made with ChatGPT</i></p>
-      <!-- Link to background gradient -->
-      <div class="background"></div>
-      
-      <!-- Footer -->
-      <br>
+    <br><br>
+    <h2>
+      <strong>Welcome</strong>
+    </h2><br>
+    <p>Welcome to my website, a dynamic and interactive representation of my professional journey—a Resume++ that goes
+      beyond the traditional. Navigate through the various sections to explore my story. <br>-<i> A blurb I made with
+        ChatGPT</i></p>
+    <!-- Link to background gradient -->
+    <div class="background"></div>
+    <br><br>
+    <h2>
+      <strong>Who Am I?</strong>
+    </h2><br>
+    <!-- Bootstrap Card -->
+    <div class="card custom-card mx-auto">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/imgSquare.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-text">Hello</h5>
+            <p class="card-text">Hello</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <h2>
+      <strong>Things you might be interested in.</strong>
+    </h2><br>
+    <p>Explore my noteworthy achievements, delve into my hobbies, navigate through my career journey, or discover the diverse range of projects I've undertaken. I'm confident that something will capture your interest. Dive in and explore more!</p>
+    <br>
+    <!--Carousel-->
+    <div class="container d-flex justify-content-center rounded">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Carousel -->
+      <div id="car" class="carousel slide" data-bs-ride="carousel" style="width:700px; height: px  ">
+  
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#car" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#car" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#car" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#car" data-bs-slide-to="3"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="images/imgSquare.png" alt="Ubuntu Server" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ubuntu Server</h5>
+              <cp>My Cool Server Blah Blah.</cp>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/imgSquare.png" alt="Hardware Experience" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>PC Builder</h5>
+              <cp>Hardware Experience.</cp>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/imgSquare.png" alt="NJIT" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>NJIT</h5>
+              <cp>My Degree and valued experience from NJIT</cp>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/imgSquare.png" alt="Career Experience" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Career Experience</h5>
+              <cp>Learn about my previous job.</cp>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#car" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#car" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <br><br>
+
   </main>
-    <footer>
-        <p>&copy; Maximilian Jacob, 2023</p>
-    </footer>
-    <!--Link to Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>   
+
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Maximilian Jacob, 2023</p>
+  </footer>
+  <!--Link to Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <!-- <script>
