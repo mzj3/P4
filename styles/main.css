@@ -293,6 +293,19 @@ main p {
     margin: 0 auto;
     z-index: 1;
 }
+/* -------Form Stuff------ */
+main form {
+    color: var(--p-text);
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+}
+main form input {
+    color: var(--p-text);
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 10px;
+}
 
 h5 a {
     color: white;
