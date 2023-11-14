@@ -20,27 +20,32 @@ html {
     /* --primary: rgb(54, 57, 93);
     --secondary: rgb(96, 89, 155); */
 }
+
 /* -----------------------------ANIMATION ORDER--------------------------------- */
 :root {
     --aniDelay: 1.0s;
     /* Adjust this value for different base delay start */
 
 }
+
 .aniWelcome {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards, slideIn 3s ease-out;
     animation-delay: calc(var(--aniDelay) + 1s);
 }
+
 .aniCard {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards, slideIn 3s ease-out;
     animation-delay: calc(var(--aniDelay) + 2s);
 }
+
 .aniCarousel {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards, slideIn 3s ease-out;
     animation-delay: calc(var(--aniDelay) + 3s);
 }
+
 /* WEB LOGO */
 #webtitle {
     text-align: center;
@@ -148,6 +153,7 @@ nav {
 
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
+
 .navani1 {
     animation-delay: calc(var(--base-delay) + 0.1s);
 }
@@ -245,9 +251,11 @@ main p {
 h5 a {
     color: white;
 }
+
 h5 a:hover {
     color: var(--secondary);
 }
+
 cp {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards, slideIn 2s ease-out;
@@ -295,10 +303,30 @@ cp {
 .custom-card .card-body p {
     margin-left: 10px;
 }
+
 .custom-card {
     margin-left: 10px;
     color: var(--p-text);
     text-align: left;
+}
+
+.image-container {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.858);
+    /* Adjust background color and opacity as needed */
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.carousel-indicators {
+    transform: translateY(-10px);  
 }
 
 
@@ -308,15 +336,19 @@ footer {
     animation: fadeIn 1.5s ease-in-out forwards, slideIn 1.5s ease-out;
     animation-delay: 6s;
 }
+
 /* Styles for the social media icons */
-footer a, footer span {
-    color: white !important; /* Text color for the links */
-    
+footer a,
+footer span {
+    color: white !important;
+    /* Text color for the links */
+
 }
 
 /* Hover effect for the links */
 footer a:hover {
-    color: var(--primary); /* Change the color on hover to a different one if desired */
+    color: var(--primary);
+    /* Change the color on hover to a different one if desired */
 }
 
 /* ------------------------------------------------------CUSTOM FONT--------------------------------------------- */
@@ -402,8 +434,9 @@ footer a:hover {
         background-position: 100% 50%;
     }
 }
+
 .carousel-caption {
-    display:contents;
+    display: contents;
 }
 
 /* Adjustments for smaller screens */
@@ -485,8 +518,12 @@ footer a:hover {
     .custom-card img {
         border-radius: none;
     }
+
     .carousel-caption {
-        display:contents;
+        display: contents;
+    }
+    .carousel-indicators {
+        transform: translateY(2px);  
     }
 
     cp {

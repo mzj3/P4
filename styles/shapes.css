@@ -1,5 +1,7 @@
 /* Animated Circles CSS */
-
+:root {
+	--color: rgba(255, 255, 255, 0.139);
+}
 .shapes {
 	position: absolute;
 	bottom: 0;
@@ -11,12 +13,12 @@
 }
 
 .shapes li {
-	position: absolute;
+	position: fixed;
 	display: block;
 	list-style: none;
 	width: 20px;
 	height: 20px;
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 	animation: animate 25s linear infinite;
 	bottom: -150px;
 }
@@ -29,7 +31,7 @@
 	animation-delay: 0s;
 	animation-duration: 20s;
 	clip-path: polygon(50% 0%, 0 88%, 100% 88%);
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 }
 /* Star */
 .shapes li:nth-child(2) {
@@ -39,7 +41,7 @@
 	animation-delay: 0s;
 	animation-duration: 25s;
 	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 }
 /* Cross */
 .shapes li:nth-child(3) {
@@ -49,7 +51,7 @@
 	animation-delay: 0s;
 	animation-duration: 20s;
 	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 }
 /* Frame */
 .shapes li:nth-child(4) {
@@ -59,7 +61,7 @@
 	animation-delay: 0s;
 	animation-duration: 15s;
 	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 }
 /* Star */
 .shapes li:nth-child(5) {
@@ -69,7 +71,7 @@
 	animation-delay: 0s;
 	animation-duration: 20s;
 	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 }
 /* Circle */
 .shapes li:nth-child(6) {
@@ -79,7 +81,7 @@
 	animation-delay: 0s;
 	animation-duration: 25s;
 	clip-path: circle(50% at 50% 50%);
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 }
 /* Circle */
 .shapes li:nth-child(7) {
@@ -89,7 +91,7 @@
 	animation-delay: 0s;
 	animation-duration: 30s;
 	clip-path: circle(50% at 50% 50%);
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 }
 /* Frame */
 .shapes li:nth-child(8) {
@@ -99,7 +101,7 @@
 	animation-delay: 0s;
 	animation-duration: 35s;
 	clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 }
 /* Cross */
 .shapes li:nth-child(9) {
@@ -109,7 +111,7 @@
 	animation-delay: 0s;
 	animation-duration: 40s;
 	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 }
 /* Triangle */
 .shapes li:nth-child(10) {
@@ -119,7 +121,7 @@
 	animation-delay: 0s;
 	animation-duration: 45s;
 	clip-path: polygon(50% 0%, 0 88%, 100% 88%);
-	background: rgba(192, 192, 192, 0.1);
+	background: var(--color);
 }
 /* Animation Keyframes of floating shapes */
 @keyframes animate {
