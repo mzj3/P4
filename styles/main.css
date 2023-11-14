@@ -22,8 +22,13 @@ html {
 }
 
 /* -----------------------------ANIMATION ORDER--------------------------------- */
-:root {
+.homePage {
     --aniDelay: 1.0s;
+    /* Adjust this value for different base delay start */
+
+}
+.interiorPage {
+    --aniDelay: 0s;
     /* Adjust this value for different base delay start */
 
 }
@@ -97,7 +102,7 @@ html {
     scrollbar-width: thin;
 }
 
-/* -----------------------------TITLE ANIMATION ELEMENTS--------------------------------- */
+/* -----------------------------HOMEPAGE TITLE ANIMATION ELEMENTS--------------------------------- */
 .title-span {
     opacity: 0;
     animation: fadeIn .5s ease-in-out forwards;
@@ -115,8 +120,14 @@ html {
     animation-delay: 1.5s;
 }
 
+/* -----------------------------INTERIOR TITLE ANIMATION ELEMENTS--------------------------------- */
+.interior-title-span {
+    opacity: 0;
+    animation: fadeIn .5s ease-in-out forwards;
+}
+
 /* -----------------------------NAVBAR ELEMENTS--------------------------------- */
-nav {
+.homeNav {
     height: 70px;
     width: 95%;
     margin: 0 auto;
@@ -124,6 +135,16 @@ nav {
     background-color: var(--secondary);
     animation: fadeIn .5s ease-in-out forwards;
     animation-delay: 1.75s;
+}
+
+.interiorNav {
+    height: 70px;
+    width: 95%;
+    margin: 0 auto;
+    opacity: 0;
+    background-color: var(--secondary);
+    animation: fadeIn .5s ease-in-out forwards;
+    animation-delay: .25s;
 }
 
 .nav-item {
@@ -158,8 +179,13 @@ nav {
 }
 
 /* -----------------------------NAVBAR ANIMATION--------------------------------- */
-:root {
+.home-navani-base {
     --base-delay: 2.0s;
+    /* Adjust this value for different base delay start */
+
+}
+.interior-navani-base {
+    --base-delay: .25s;
     /* Adjust this value for different base delay start */
 
 }
@@ -344,14 +370,6 @@ cp {
     transform: translateY(-10px);  
 }
 
-
-footer {
-
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards, slideIn 1.5s ease-out;
-    animation-delay: 6s;
-}
-
 /* Styles for the social media icons */
 footer a,
 footer span {
@@ -359,6 +377,7 @@ footer span {
     /* Text color for the links */
 
 }
+
 
 /* Hover effect for the links */
 footer a:hover {
