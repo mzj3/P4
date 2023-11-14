@@ -27,6 +27,7 @@ html {
     /* Adjust this value for different base delay start */
 
 }
+
 .interiorPage {
     --aniDelay: 0s;
     /* Adjust this value for different base delay start */
@@ -50,16 +51,19 @@ html {
     animation: fadeIn 2s ease-in-out forwards, slideIn 3s ease-out;
     animation-delay: calc(var(--aniDelay) + 3s);
 }
+
 .aniOrder4 {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards, slideIn 3s ease-out;
     animation-delay: calc(var(--aniDelay) + 4s);
 }
+
 .aniOrder5 {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards, slideIn 3s ease-out;
     animation-delay: calc(var(--aniDelay) + 5s);
 }
+
 .aniOrder6 {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards, slideIn 3s ease-out;
@@ -128,7 +132,7 @@ html {
 
 /* -----------------------------NAVBAR ELEMENTS--------------------------------- */
 .homeNav {
-    height: 70px;
+    /* height: 70px; */
     width: 95%;
     margin: 0 auto;
     opacity: 0;
@@ -138,7 +142,7 @@ html {
 }
 
 .interiorNav {
-    height: 70px;
+    /* height: 70px; */
     width: 95%;
     margin: 0 auto;
     opacity: 0;
@@ -184,6 +188,7 @@ html {
     /* Adjust this value for different base delay start */
 
 }
+
 .interior-navani-base {
     --base-delay: .25s;
     /* Adjust this value for different base delay start */
@@ -366,8 +371,9 @@ cp {
     padding: 10px;
     box-sizing: border-box;
 }
+
 .carousel-indicators {
-    transform: translateY(-10px);  
+    transform: translateY(-10px);
 }
 
 /* Styles for the social media icons */
@@ -477,8 +483,16 @@ footer a:hover {
 @media (max-width: 768px) {
 
     /*Set for Quicker animation mobile*/
-    :root {
+    .home-navani-base {
         --base-delay: 0.0s;
+        /* Adjust this value for different base delay start */
+
+    }
+
+    .interior-navani-base {
+        --base-delay: 0s;
+        /* Adjust this value for different base delay start */
+
     }
 
     /* Make Logo smaller */
@@ -556,11 +570,20 @@ footer a:hover {
     .carousel-caption {
         display: contents;
     }
+
     .carousel-indicators {
-        transform: translateY(2px);  
+        transform: translateY(4px);
     }
 
     cp {
         font-size: 80%;
+    }
+
+    footer a,
+    footer span {
+        color: white !important;
+        font-size: 75%;
+        /* Text color for the links */
+
     }
 }
