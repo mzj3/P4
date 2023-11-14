@@ -107,7 +107,7 @@ nav {
 }
 
 .nav-item {
-    color: var(--p-text);
+    color: var(--p-re);
 }
 
 /* Override Bootstrap default text color for navbar links */
@@ -144,6 +144,10 @@ nav {
 
 }
 
+.navbar-nav .current {
+
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
 .navani1 {
     animation-delay: calc(var(--base-delay) + 0.1s);
 }
