@@ -1,104 +1,261 @@
+<!-- DEVELOPER: Maximilian Jacob, IS117-001, Fall 2023 -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>My First Bootstrap Page</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous">
-    <link href="css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maximilian.bio</title>
 
+  <!-- Link to favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+  <!--Link to Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- Link to Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/shapes.css" rel="stylesheet">
+
+  <!-- Custom Font from Google (Ubunutu) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
-<body>
-<div class="container-fluid">
-    <div class="row">
-            <nav class="navbar navbar-expand-md
-                    justify-content-start
-                    bg-dark navbar-dark
-                    col-12">
 
-                <!-- Brand -->
-                <a class="navbar-brand" href="#">Logo</a>
-                <!-- Responsive Button for the smaller menu -->
-                <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <!-- Links -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
+<body style="display:none">
 
-                        <!-- Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
-                               data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Education
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
-                                <a class="dropdown-item" href="#">Link 4</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        <div class="container">
-          <div class="row">
-            <form action="">
-                <div class="form-group">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" class="form-control" id="firstname"
-                           placeholder="First name" name="firstname">
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" class="form-control" id="lastname"
-                           placeholder="Last name" name="lastname">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email"
-                           placeholder="Enter email" name="email">
-                </div>
-                <div class="form-group form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input"
-                               type="checkbox" name="subscribe"> Subscribe
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </row>
-</div>
+  <!-- Webtitle -->
+  <br>
+  <h1 id="webtitle">
+    <span class="title-span" style="color:  var(--secondary);">maximilian</span><span class="title-span"
+      style="color: var(--primary);">.</span><span class="title-span" style="color:  var(--secondary);">bio</span>
+  </h1>
+  <br>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md navbar-light" style="background-color: var(--secondary)">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="images/customBurger.png" alt="Custom Toggle Icon" width="30" height="30">
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="current navani1 nav-link active" href="home.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navani2 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Introduction</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Ubuntu Server</a></li>
+              <li><a class="dropdown-item" href="#">Raspberry Pi</a></li>
+              <li><a class="dropdown-item" href="#">This Website</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navani3 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About Me
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Introduction</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Hobbies</a></li>
+              <li><a class="dropdown-item" href="#">Skills</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navani4 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Career
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Introduction</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Geek Squad</a></li>
+              <li><a class="dropdown-item" href="#">Best Buy</a></li>
+              <li><a class="dropdown-item" href="#">Spring Lake Bath & Tennis Club</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navani5 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Education
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Introduction</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">College Degree</a></li>
+              <li><a class="dropdown-item" href="#">Notable Classes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="navani6 nav-link active" href="contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <br>
+    <h2 class="aniOrder1">
+      <strong>Welcome</strong>
+    </h2><br>
+    <p class="aniOrder1">Welcome to my digital space! I'm thrilled to have you here. This is where my professional
+      journey and personal interests come to life. Take a moment to explore and discover more about who I am and what I
+      have to offer.</p>
+    <!-- Link to background gradient -->
+    <div class="background"></div>
+    <br><br>
+    <h2 class="aniOrder2">
+      <strong>Who Am I?</strong>
+    </h2><br>
+    <!-- Bootstrap Card -->
+    <div class="aniOrder2 custom-card mx-auto">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="images/headshot.png" class="img-fluid rounded-start" alt="Picture of Me">
         </div>
- <footer class="footer page-footer font-small ">
-     <div class="container">
-        <div class="row">
-            <span class="text-muted">&copy; Art Hendela, 2021 |  Terms Of Use  |  Privacy Statement</span>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-text">Hello!</h3>
+            <ct class="card-text">I'm Max, a 23-year-old student currently enrolled at New Jersey Institute of
+              Technology. As I journey through my academic and professional pursuits, I invite you to delve into my
+              story. From projects and achievements to insights into my career and education, I know there is something
+              here for everyone.</p>
+          </div>
         </div>
-     </div>
-  </footer>
-</div>
+      </div>
+    </div>
+    <br><br>
+    <h2 class="aniOrder3">
+      <strong>Things you might be interested in.</strong>
+    </h2><br>
+    <p class="aniOrder3">Explore my noteworthy achievements, delve into my hobbies, navigate through my career
+      journey, or discover the diverse range of projects I've undertaken. I'm confident that something will capture your
+      interest. Here are a few that may catch your eye!</p>
+    <br>
+    <!--Carousel-->
+    <div class="aniOrder3 container d-flex justify-content-center rounded">
+
+      <div id="car" class="carousel slide" data-bs-ride="carousel" style="width:700px; height: px  ">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators" style="transform: translateY(-10px);">
+          <button type="button" data-bs-target="#car" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#car" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#car" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#car" data-bs-slide-to="3"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner rounded">
+          <div style="text-align: center;" class="carousel-item active">
+            <img src="images/ubuntu-server.png" alt="Ubuntu Server" class="rounded d-block w-100">
+            <div class="carousel-caption d-md-block rounded">
+              <h5><strong><a href="#">Ubuntu Server Project</a></strong></h5>
+              <cp><i>SysAdmin and Server Hoster!</i></cp>
+            </div>
+          </div>
+          <div style="text-align: center;" class="carousel-item">
+            <img src="images/pc1.png" alt="Hardware Experience" class="rounded d-block w-100">
+            <div class="carousel-caption d-md-block rounded">
+              <h5><strong><a href="#">PC Builder</a></strong></h5>
+              <cp><i>Hardware Hobbyist and Tinkerer.</i></cp>
+            </div>
+          </div>
+          <div style="text-align: center;" class="carousel-item">
+            <img src="images/njit.png" alt="NJIT Picture" class="rounded d-block w-100">
+            <div class="carousel-caption d-md-block">
+              <h5><strong><a href="#">NJIT Student</a></strong></h5>
+              <cp><i>My IT Degree and valued courses.</i></cp>
+            </div>
+          </div>
+          <div style="text-align: center;" class="carousel-item">
+            <img src="images/gs-bb.png" alt="Career Experience Picture" class="rounded d-block w-100">
+            <div class="carousel-caption d-md-block justify-content-center">
+              <h5><strong><a href="#">Seasoned Career</a></strong></h5>
+              <cp><i>My notable work experience.</i></cp>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#car" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#car" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <br><br>
+
+  </main>
 
 
-    <!-- Javascript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous">
-</script>
+  <!-- Footer -->
+  <!-- Name, Terms of Use, and Privacy Policy -->
+  <div class="container-fluid">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-muted"><span>&copy; Maximilian Jacob, 2023</span> | <a href="#">Terms of Use</a>
+          | <a href="#">Privacy Policy</a></span>
+      </div>
+      <!-- Links to GitHub and LinkedIn -->
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a href="https://www.github.com/mzj3" target="_blank"><img width="50px" height="50px"
+              src="images/github.png" alt="GitHub"></a></li>
+        <li class="ms-3"><a href="#" target="_blank"><img width="50px" height="50px" src="images/linkedin.png"
+              alt="LinkedIn"></a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <!--Link to Bootstrap JS-->
+  <!-- Link to Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-b12dFkG9ScZ3zT04Fq+oaSJIe7iJ3dJmpSSr3cbkF5MYEF5zQooOn7FH3BuEUCIH"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 
 </body>
+<!-- Floating Shapes -->
+<ul class='shapes'>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
 </html>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
