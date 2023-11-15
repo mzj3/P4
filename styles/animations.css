@@ -1,0 +1,38 @@
+/* Header Animations */
+[data-inviewport="header"] {
+    opacity: 0;
+}
+
+[data-inviewport="header"].is-inViewport {
+    animation: fadeIn .5s ease-in-out forwards, slideIn .5s ease-in-out forwards;
+}
+
+/* Paragraph Animations */
+[data-inviewport="paragraph"] {
+    opacity: 0;
+}
+
+[data-inviewport="paragraph"].is-inViewport {
+    animation: fadeIn 1s ease-in-out forwards, slideIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    100% {
+        opacity: 1;
+        z-index: 1;
+    }
+}@keyframes slideIn {
+    0% {
+        transform: translateY(200%);
+    }
+
+    100% {
+        transform: translateY(0%);
+        z-index: 1;
+    }
+}
