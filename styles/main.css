@@ -5,7 +5,7 @@ html {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* -----------------------------VARIABLES--------------------------------- */
+/* -----------------------------COLOR VARIABLES--------------------------------- */
 :root {
     /* Primary and Secondary Colors + more*/
     --primary: rgb(54, 57, 93);
@@ -306,6 +306,13 @@ main form input {
     border: none;
     border-radius: 10px;
 }
+.web-links {
+    color: var(--secondary);
+}
+.web-links:hover {
+    color: var(--primary);
+}
+
 
 h5 a {
     color: white;
