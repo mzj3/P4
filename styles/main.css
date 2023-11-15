@@ -20,14 +20,7 @@ html {
     /* --primary: rgb(54, 57, 93);
     --secondary: rgb(96, 89, 155); */
 }
-hr {
-    padding-bottom: 20px;
-    opacity: 0;
-    color: var(--primary);
-    width: 70%;
-    margin: 0 auto;
-    
-}
+
 /* -----------------------------ANIMATION ORDER--------------------------------- */
 .homePage {
     --aniDelay: 1.0s;
@@ -43,7 +36,7 @@ hr {
 
 .aniOrder1 {
     opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards, slideIn 3s ease-out;
+    animation: fadeIn 1s ease-in-out forwards, slideIn 3s ease-out;
     animation-delay: calc(var(--aniDelay) + 1s);
 }
 
@@ -299,6 +292,16 @@ main p {
     width: 70%;
     margin: 0 auto;
     z-index: 1;
+}
+main hr {
+    padding-bottom: 20px;
+    opacity: 0;
+    color: var(--primary);
+    width: 70%;
+    margin: 0 auto; 
+}
+.interior-img {
+    width: 80%;
 }
 /* -------Form Stuff------ */
 main form {
