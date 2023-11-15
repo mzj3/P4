@@ -1,5 +1,5 @@
 /* Header Animations */
-[data-inviewport="header"] {
+[ data-inviewport="header"] {
     opacity: 0;
 }
 
@@ -13,9 +13,35 @@
 }
 
 [data-inviewport="paragraph"].is-inViewport {
-    animation: fadeIn 1s ease-in-out forwards, slideIn 1s ease-in-out forwards;
+    animation: fadeIn 2s ease-in-out forwards;
 }
 
+/* Image Animations */
+[data-inviewport="image"] {
+    opacity: 0;
+}
+
+[data-inviewport="image"].is-inViewport {
+    animation: fadeIn 1s ease-in-out forwards, zoomIn .5s ease-in-out forwards;
+}
+
+/* Horizontal Rule Animation */
+[data-inviewport="horizontal-rule"] {
+    opacity: 0;
+}
+
+[data-inviewport="horizontal-rule"].is-inViewport {
+    animation: fadeIn 2s ease-in-out forwards, zoomIn 1s ease-in-out forwards;
+}
+
+/* Footer Animation */
+[data-inviewport="footer"] {
+    opacity: 0;
+}
+
+[data-inviewport="footer"].is-inViewport {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -26,13 +52,26 @@
         opacity: 1;
         z-index: 1;
     }
-}@keyframes slideIn {
+}
+
+@keyframes slideIn {
     0% {
         transform: translateY(200%);
     }
 
     100% {
         transform: translateY(0%);
+        z-index: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
         z-index: 1;
     }
 }
