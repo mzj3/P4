@@ -19,6 +19,7 @@
 
   <link href="styles/main.css" rel="stylesheet">
   <link href="styles/shapes.css" rel="stylesheet">
+  <link href="styles/animations.css" rel="stylesheet">
 
   <!-- Custom Font from Google (Ubunutu) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,8 +32,9 @@
   <!-- Webtitle -->
   <br>
   <h1 id="webtitle">
-    <span class="interior-title-span" style="color:  var(--secondary);">maximilian</span><span class="interior-title-span"
-      style="color: var(--primary);">.</span><span class="interior-title-span" style="color:  var(--secondary);">bio</span>
+    <span class="interior-title-span" style="color:  var(--secondary);">maximilian</span><span
+      class="interior-title-span" style="color: var(--primary);">.</span><span class="interior-title-span"
+      style="color:  var(--secondary);">bio</span>
   </h1>
   <br>
   <!--Navbar-->
@@ -118,39 +120,51 @@
   </nav>
 
 
-  
+
   <main>
     <br>
-    <h2 id="intro" class="interiorPage aniOrder1">
+    <h2 id="intro" data-inviewport="header">
       <strong>Introduction</strong>
     </h2>
-    <p class="interiorPage aniOrder1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci, voluptatem ullam magnam repudiandae maiores ipsam?</p>
+    <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+      quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+      voluptatem ullam magnam repudiandae maiores ipsam?</p>
     <br>
-    <hr class="interiorPage aniOrder1"></hr>
-    <h2 id="ubuntu-server" class="interiorPage aniOrder2">
-        <strong>Ubuntu Server</strong>
+    <hr>
+    <h2 id="ubuntu-server">
+      <strong>Ubuntu Server</strong>
     </h2>
     <br>
-    <img src="images/ubuntu-server.png" class="interiorPage aniOrder2 interior-img img-fluid rounded mx-auto d-block" alt="Ubuntu Server Interface">
+    <img src="images/ubuntu-server.png" class="interior-img img-fluid rounded mx-auto d-block"
+      alt="Ubuntu Server Interface">
     <br>
-    <p class="interiorPage aniOrder2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci, voluptatem ullam magnam repudiandae maiores ipsam?</p>
+    <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+      quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+      voluptatem ullam magnam repudiandae maiores ipsam?</p>
     <br>
-    <hr class="interiorPage aniOrder3"></hr>
-    <h2 id="ubuntu-server" class="interiorPage aniOrder3">
-        <strong>Stream Pi</strong>
+    <hr>
+    <h2 id="ubuntu-server">
+      <strong>Stream Pi</strong>
     </h2>
     <br>
-    <img src="images/streampi1.png" class="interiorPage aniOrder3 interior-img img-fluid rounded mx-auto d-block" alt="My Stream Pi">
+    <img src="images/streampi1.png" class="interior-img img-fluid rounded mx-auto d-block"
+      alt="My Stream Pi">
     <br>
-    <p class="interiorPage aniOrder3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci, voluptatem ullam magnam repudiandae maiores ipsam?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+      quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+      voluptatem ullam magnam repudiandae maiores ipsam?</p>
     <br>
-    <hr class="interiorPage aniOrder3"></hr>
-    <h2 id="this-website" class="interiorPage aniOrder4">
-        <strong>This Website</strong>
+    <hr>
+    </hr>
+    <h2 id="this-website">
+      <strong>This Website</strong>
     </h2><br>
-    <img src="images/thiswebsite.png" class="interiorPage aniOrder4 interior-img img-fluid rounded mx-auto d-block" alt="Website + GitHub Desktop">
+    <img src="images/thiswebsite.png" class="interior-img img-fluid rounded mx-auto d-block"
+      alt="Website + GitHub Desktop">
     <br>
-    <p class="interiorPage aniOrder4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci, voluptatem ullam magnam repudiandae maiores ipsam?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+      quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+      voluptatem ullam magnam repudiandae maiores ipsam?</p>
     <!-- Link to background gradient -->
     <div class="background"></div>
     <br><br>
@@ -160,7 +174,8 @@
   <!-- Footer -->
   <!-- Name, Terms of Use, and Privacy Policy -->
   <div class="container-fluid">
-    <footer class="interiorPage aniOrder5 d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="d-flex align-items-center">
         <span class="mb-3 mb-md-0 text-muted"><span>&copy; Maximilian Jacob, 2023</span> | <a href="#">Terms of Use</a>
           | <a href="#">Privacy Policy</a></span>
@@ -184,6 +199,7 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
 
+  <script src="styles/animations.js" defer></script>
 </body>
 <!-- Floating Shapes -->
 <ul class='shapes'>
@@ -203,7 +219,7 @@
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
 <style>
-:root {
+  :root {
     /* Primary and Secondary Colors + more*/
     --primary: rgb(54, 85, 93);
     --secondary: rgb(89, 151, 155);
@@ -216,5 +232,5 @@
 
     /* --primary: rgb(54, 57, 93);
     --secondary: rgb(96, 89, 155); */
-}
-  </style>
+  }
+</style>

@@ -295,8 +295,7 @@ main p {
 }
 main hr {
     padding-bottom: 20px;
-    opacity: 0;
-    color: var(--primary);
+    color: var(--secondary);
     width: 70%;
     margin: 0 auto; 
 }
@@ -610,7 +609,6 @@ footer a:hover {
     }
 
     hr {
-        opacity: 0;
         color: var(--secondary);
         width: 80%;
         margin: 0 auto;
