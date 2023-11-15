@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <style>
+        /* inViewport */
+        [data-inviewport="header"] {
+            opacity: 0;
+        }
+
+        [data-inviewport="header"].is-inViewport {
+            animation: header-ani .5s ease-in-out forwards;
+        }
+        @keyframes header-ani {
+            0% {
+                opacity: 0;
+                transform: translateY(200%);
+                z-index: 1;
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+                z-index: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <br><br><br>
+        <h2 data-inviewport="header">Heading</h2>
+        <br>
+        <p data-inviewport="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae culpa totam iure
+            repellat quis sint
+            reiciendis! Tempore voluptatum delectus, hic quaerat culpa qui, iste aliquam ipsam magni dignissimos, illum
+            saepe?</p>
+        <p data-inviewport="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae culpa totam iure
+            repellat quis sint
+            reiciendis! Tempore voluptatum delectus, hic quaerat culpa qui, iste aliquam ipsam magni dignissimos, illum
+            saepe?</p>
+        <p data-inviewport="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae culpa totam iure
+            repellat quis sint
+            reiciendis! Tempore voluptatum delectus, hic quaerat culpa qui, iste aliquam ipsam magni dignissimos, illum
+            saepe?</p>
+        <p data-inviewport="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae culpa totam iure
+            repellat quis sint
+            reiciendis! Tempore voluptatum delectus, hic quaerat culpa qui, iste aliquam ipsam magni dignissimos, illum
+            saepe?</p>
+        <p data-inviewport="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae culpa totam iure
+            repellat quis sint
+            reiciendis! Tempore voluptatum delectus, hic quaerat culpa qui, iste aliquam ipsam magni dignissimos, illum
+            saepe?</p>
+        <p data-inviewport="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae culpa totam iure
+            repellat quis sint
+            reiciendis! Tempore voluptatum delectus, hic quaerat culpa qui, iste aliquam ipsam magni dignissimos, illum
+            saepe?</p>
+        <p data-inviewport="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae culpa totam iure
+            repellat quis sint
+            reiciendis! Tempore voluptatum delectus, hic quaerat culpa qui, iste aliquam ipsam magni dignissimos, illum
+            saepe?</p>
+        <p data-inviewport="header">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae culpa totam iure
+            repellat quis sint
+            reiciendis! Tempore voluptatum delectus, hic quaerat culpa qui, iste aliquam ipsam magni dignissimos, illum
+            saepe?</p>
+    </main>
+
+    <script>
+        const inViewport = (entries, observer) => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+            });
+        };
+
+        const Obs = new IntersectionObserver(inViewport);
+        const obsOptions = {}; // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
+
+        // Attach observer to every [data-inviewport] element:
+        document.querySelectorAll('[data-inviewport]').forEach(el => {
+            Obs.observe(el, obsOptions);
+        });
+    </script>
+</body>
+
+</html>
