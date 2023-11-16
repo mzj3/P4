@@ -1,3 +1,86 @@
+/* maximilian.bio */
+[ data-inviewport="maximilian"] {
+    opacity: 0;
+}
+
+[data-inviewport="maximilian"].is-inViewport {
+    animation: fadeIn .5s ease-in-out forwards;
+    animation-delay: 0s;
+}
+
+[ data-inviewport="dot"] {
+    opacity: 0;
+}
+
+[data-inviewport="dot"].is-inViewport {
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: .5s;
+}
+
+[ data-inviewport="bio"] {
+    opacity: 0;
+}
+
+[data-inviewport="bio"].is-inViewport {
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+/* Navbar Animations */
+[ data-inviewport="navitem1"] {
+    opacity: 0;
+}
+
+[data-inviewport="navitem1"].is-inViewport {
+    animation: fadeIn .5s ease-in-out forwards, slideIn .5s ease-in-out forwards;
+    animation-delay: 0s;
+}
+
+[ data-inviewport="navitem2"] {
+    opacity: 0;
+}
+
+[data-inviewport="navitem2"].is-inViewport {
+    animation: fadeIn .5s ease-in-out forwards, slideIn .5s ease-in-out forwards;
+    animation-delay: 0.1s;
+}
+
+[ data-inviewport="navitem3"] {
+    opacity: 0;
+}
+
+[data-inviewport="navitem3"].is-inViewport {
+    animation: fadeIn .5s ease-in-out forwards, slideIn .5s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+[ data-inviewport="navitem4"] {
+    opacity: 0;
+}
+
+[data-inviewport="navitem4"].is-inViewport {
+    animation: fadeIn .5s ease-in-out forwards, slideIn .5s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+[ data-inviewport="navitem5"] {
+    opacity: 0;
+}
+
+[data-inviewport="navitem5"].is-inViewport {
+    animation: fadeIn .5s ease-in-out forwards, slideIn .5s ease-in-out forwards;
+    animation-delay: 0.4s;
+}
+
+[ data-inviewport="navitem6"] {
+    opacity: 0;
+}
+
+[data-inviewport="navitem6"].is-inViewport {
+    animation: fadeIn .5s ease-in-out forwards, slideIn .5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
 /* Header Animations */
 [ data-inviewport="header"] {
     opacity: 0;
@@ -42,6 +125,7 @@
 [data-inviewport="footer"].is-inViewport {
     animation: fadeIn 1.5s ease-in-out forwards;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

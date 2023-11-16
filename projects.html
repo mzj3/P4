@@ -18,6 +18,22 @@
     crossorigin="anonymous"></script>
 
   <link href="styles/main.css" rel="stylesheet">
+  <style>
+    :root {
+      /* Primary and Secondary Colors + more*/
+      --primary: rgb(54, 85, 93);
+      --secondary: rgb(89, 151, 155);
+      --p-text: rgb(225, 225, 225);
+
+      /* Gradient Colors */
+      --dGradient: var(--primary);
+      --lGradient: rgb(0, 0, 0);
+
+
+      /* --primary: rgb(54, 57, 93);
+      --secondary: rgb(96, 89, 155); */
+    }
+  </style>
   <link href="styles/shapes.css" rel="stylesheet">
   <link href="styles/animations.css" rel="stylesheet">
 
@@ -32,9 +48,8 @@
   <!-- Webtitle -->
   <br>
   <h1 id="webtitle">
-    <span class="interior-title-span" style="color:  var(--secondary);">maximilian</span><span
-      class="interior-title-span" style="color: var(--primary);">.</span><span class="interior-title-span"
-      style="color:  var(--secondary);">bio</span>
+    <span data-inviewport="maximilian" style="color:  var(--secondary);">maximilian</span><span data-inviewport="dot"
+      style="color: var(--primary);">.</span><span data-inviewport="bio" style="color:  var(--secondary);">bio</span>
   </h1>
   <br>
   <!--Navbar-->
@@ -47,13 +62,13 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="interior-navani-base navani1 nav-link active" href="home.html">
+            <a data-inviewport="navitem1" class="nav-link active" href="home.html">
               Home
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="interior-navani-base navani2 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
+            <a data-inviewport="navitem2" class="current nav-link dropdown-toggle" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projects
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -67,7 +82,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="interior-navani-base navani3 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <a data-inviewport="navitem3" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               About Me
             </a>
@@ -81,7 +96,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="interior-navani-base navani4 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <a data-inviewport="navitem4" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Career
             </a>
@@ -96,7 +111,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="interior-navani-base navani5 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <a data-inviewport="navitem5" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Education
             </a>
@@ -110,7 +125,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="interior-navani-base navani6 nav-link active" href="contact.html">
+            <a data-inviewport="navitem6" class="nav-link active" href="contact.html">
               Contact
             </a>
           </li>
@@ -173,8 +188,7 @@
   <!-- Footer -->
   <!-- Name, Terms of Use, and Privacy Policy -->
   <div data-inviewport="footer" class="container-fluid">
-    <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="d-flex align-items-center">
         <span class="mb-3 mb-md-0 text-muted"><span>&copy; Maximilian Jacob, 2023</span> | <a href="#">Terms of Use</a>
           | <a href="#">Privacy Policy</a></span>
@@ -216,20 +230,3 @@
 
 </html>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-
-<style>
-  :root {
-    /* Primary and Secondary Colors + more*/
-    --primary: rgb(54, 85, 93);
-    --secondary: rgb(89, 151, 155);
-    --p-text: rgb(225, 225, 225);
-
-    /* Gradient Colors */
-    --dGradient: var(--primary);
-    --lGradient: rgb(0, 0, 0);
-
-
-    /* --primary: rgb(54, 57, 93);
-    --secondary: rgb(96, 89, 155); */
-  }
-</style>
