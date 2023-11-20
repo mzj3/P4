@@ -116,7 +116,14 @@
 [data-inviewport="horizontal-rule"].is-inViewport {
     animation: fadeIn 2s ease-in-out forwards, zoomIn 1s ease-in-out forwards;
 }
+/* Form Animation */
+[data-inviewport="form"] {
+    opacity: 0;
+}
 
+[data-inviewport="form"].is-inViewport {
+    animation: fadeIn 1.5s ease-in-out forwards, zoomIn .5s ease-in-out forwards;
+}
 /* Footer Animation */
 [data-inviewport="footer"] {
     opacity: 0;
