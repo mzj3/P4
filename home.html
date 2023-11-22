@@ -19,6 +19,7 @@
 
   <link href="styles/main.css" rel="stylesheet">
   <link href="styles/shapes.css" rel="stylesheet">
+  <link href="styles/animations.css" rel="stylesheet">
 
   <!-- Custom Font from Google (Ubunutu) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,12 +32,12 @@
   <!-- Webtitle -->
   <br>
   <h1 id="webtitle">
-    <span class="title-span" style="color:  var(--secondary);">maximilian</span><span class="title-span"
-      style="color: var(--primary);">.</span><span class="title-span" style="color:  var(--secondary);">bio</span>
+    <span data-inviewport="maximilian" style="color:  var(--secondary);">maximilian</span><span data-inviewport="dot"
+      style="color: var(--primary);">.</span><span data-inviewport="bio" style="color:  var(--secondary);">bio</span>
   </h1>
   <br>
   <!--Navbar-->
-  <nav class="homeNav navbar navbar-expand-md navbar-light" style="background-color: var(--secondary)">
+  <nav class="interiorNav navbar navbar-expand-md navbar-light" style="background-color: var(--secondary)">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,12 +46,12 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="current home-navani-base navani1 nav-link active" href="home.html">
+            <a data-inviewport="navitem1" class="current nav-link active" href="home.html">
               Home
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="home-navani-base navani2 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <a data-inviewport="navitem2" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Projects
             </a>
@@ -65,7 +66,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="home-navani-base navani3 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <a data-inviewport="navitem3" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               About Me
             </a>
@@ -79,7 +80,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="home-navani-base navani4 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <a data-inviewport="navitem4" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Career
             </a>
@@ -94,7 +95,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="home-navani-base navani5 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <a data-inviewport="navitem5" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Education
             </a>
@@ -108,7 +109,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="home-navani-base navani6 nav-link active" href="contact.html">
+            <a data-inviewport="navitem6" class="nav-link active" href="contact.html">
               Contact
             </a>
           </li>
@@ -116,22 +117,26 @@
       </div>
     </div>
   </nav>
+
   <main>
     <br>
-    <h2 class="homePage aniOrder1">
+    <h2 data-inviewport="header">
       <strong>Welcome</strong>
     </h2><br>
-    <p class="homePage aniOrder1">Welcome to my digital space! I'm thrilled to have you here. This is where my professional
+    <p data-inviewport="paragraph">Welcome to my digital space! I'm thrilled to have you here. This is where my
+      professional
       journey and personal interests come to life. Take a moment to explore and discover more about who I am and what I
       have to offer.</p>
+    <br>
+    <hr data-inviewport="horizontal-rule">
     <!-- Link to background gradient -->
     <div class="background"></div>
-    <br><br>
-    <h2 class="homePage aniOrder2">
+    <br>
+    <h2 data-inviewport="header">
       <strong>Who Am I?</strong>
     </h2><br>
     <!-- Bootstrap Card -->
-    <div class="homePage aniOrder2 custom-card mx-auto">
+    <div data-inviewport="image" class="custom-card mx-auto">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="images/headshot.png" class="img-fluid rounded-start" alt="Picture of Me">
@@ -148,18 +153,18 @@
       </div>
     </div>
     <br><br>
-    <h2 class="homePage aniOrder3">
+
+    <hr data-inviewport="horizontal-rule">
+    <h2 data-inviewport="header">
       <strong>Things you might be interested in.</strong>
     </h2><br>
-    <p class="homePage aniOrder3">Explore my noteworthy achievements, delve into my hobbies, navigate through my career
+    <p data-inviewport="paragraph">Explore my noteworthy achievements, delve into my hobbies, navigate through my career
       journey, or discover the diverse range of projects I've undertaken. I'm confident that something will capture your
       interest. Here are a few that may catch your eye!</p>
     <br>
     <!--Carousel-->
-    <div class="homePage aniOrder3 container d-flex justify-content-center rounded">
-
+    <div data-inviewport="image" class="container d-flex justify-content-center rounded">
       <div id="car" class="carousel slide" data-bs-ride="carousel" style="width:700px; height: px  ">
-
         <!-- Indicators/dots -->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#car" data-bs-slide-to="0" class="active"></button>
@@ -173,7 +178,8 @@
           <div style="text-align: center;" class="carousel-item active">
             <img src="images/ubuntu-server.png" alt="Ubuntu Server" class="rounded d-block w-100">
             <div class="carousel-caption d-md-block rounded">
-              <h5><strong><a class="web-links" href="projects.html#ubuntu-server">Ubuntu Server Project</a></strong></h5>
+              <h5><strong><a class="web-links" href="projects.html#ubuntu-server">Ubuntu Server Project</a></strong>
+              </h5>
               <cp><i>SysAdmin and Server Hoster!</i></cp>
             </div>
           </div>
@@ -209,16 +215,16 @@
         </button>
       </div>
     </div>
-    
+
     <br><br>
-    
+
   </main>
 
 
   <!-- Footer -->
   <!-- Name, Terms of Use, and Privacy Policy -->
-  <div class="container-fluid">
-    <footer class="homePage aniOrder4 d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div data-inviewport="footer" class="container-fluid">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="d-flex align-items-center">
         <span class="mb-3 mb-md-0 text-muted"><span>&copy; Maximilian Jacob, 2023</span> | <a href="#">Terms of Use</a>
           | <a href="#">Privacy Policy</a></span>
@@ -241,7 +247,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
-
+  <script src="styles/animations.js" defer></script>
 </body>
 <!-- Floating Shapes -->
 <ul class='shapes'>
@@ -256,6 +262,7 @@
   <li></li>
   <li></li>
 </ul>
+
 </html>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <!-- <script>
