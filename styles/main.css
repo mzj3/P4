@@ -275,7 +275,7 @@ main {
     margin: 0 auto;
 }
 
-main h2 {
+main h2, main h4 {
     opacity: 1;
     color: var(--secondary);
 
@@ -287,8 +287,15 @@ main p {
 
 }
 
-main h2,
+main h2,  main h4,
 main p {
+    width: 70%;
+    margin: 0 auto;
+    z-index: 1;
+}
+main .jobpoint {
+    color: var(--p-text);
+    opacity: 1;
     width: 70%;
     margin: 0 auto;
     z-index: 1;
@@ -301,6 +308,9 @@ main hr {
 }
 .interior-img {
     width: 70%;
+}
+.career-img {
+    width: 20%;
 }
 /* -------Form Stuff------ */
 main form {
@@ -571,12 +581,12 @@ footer a:hover {
     }
 
     /* Adjust the width for smaller screens */
-    main h2,
+    main h2, main h4,
     main p {
         width: 80%;
     }
 
-    main h2 {
+    main h2, main h4 {
         text-align: center;
     }
 
@@ -596,6 +606,9 @@ footer a:hover {
     }
     .interior-img {
         width: 90%;
+    }
+    .career-img {
+        width: 30%;
     }
     .custom-card img {
         border-radius: none;
