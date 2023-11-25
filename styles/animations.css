@@ -98,6 +98,15 @@
 [data-inviewport="paragraph"].is-inViewport {
     animation: fadeIn 2s ease-in-out forwards;
 }
+/* Bullet Animations */
+[data-inviewport="bullet"] {
+    opacity: 0;
+}
+
+[data-inviewport="bullet"].is-inViewport {
+    animation: fadeIn 1s ease-in-out forwards,
+               slideInSideways 1s ease-out;
+}
 
 /* Image Animations */
 [data-inviewport="image"] {
@@ -152,6 +161,17 @@
 
     100% {
         transform: translateY(0%);
+        z-index: 1;
+    }
+}
+
+@keyframes slideInSideways {
+    0% {
+        transform: translateX(-15%);
+    }
+
+    100% {
+        transform: translateX(0%);
         z-index: 1;
     }
 }

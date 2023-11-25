@@ -293,9 +293,9 @@ main p {
     margin: 0 auto;
     z-index: 1;
 }
-main .jobpoint {
+main .bullet {
     color: var(--p-text);
-    opacity: 1;
+    opacity: 0;
     width: 70%;
     margin: 0 auto;
     z-index: 1;
