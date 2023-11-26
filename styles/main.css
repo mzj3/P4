@@ -275,7 +275,7 @@ main {
     margin: 0 auto;
 }
 
-main h2, main h4 {
+main h2, main h4, main h6 {
     opacity: 1;
     color: var(--secondary);
 
@@ -287,7 +287,7 @@ main p {
 
 }
 
-main h2,  main h4,
+main h2,  main h4, main h6,
 main p {
     width: 70%;
     margin: 0 auto;
@@ -311,6 +311,9 @@ main hr {
 }
 .career-img {
     width: 20%;
+}
+.education-img {
+    width: 50%;
 }
 /* -------Form Stuff------ */
 main form {
@@ -581,19 +584,17 @@ footer a:hover {
     }
 
     /* Adjust the width for smaller screens */
-    main h2, main h4,
+    main h2, main h4, main h6,
     main p {
         width: 80%;
     }
 
-    main h2, main h4 {
+    main h2, main h4, main h6 {
         text-align: center;
     }
-
     main p {
         font-size: 100%;
     }
-
     .custom-card {
         max-width: 90%;
         /* Custom background color */
@@ -609,6 +610,9 @@ footer a:hover {
     }
     .career-img {
         width: 30%;
+    }
+    .education-img {
+        width: 70%;
     }
     .custom-card img {
         border-radius: none;

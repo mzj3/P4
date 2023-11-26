@@ -18,11 +18,12 @@
     crossorigin="anonymous"></script>
 
   <link href="styles/main.css" rel="stylesheet">
+  <link href="styles/main.css" rel="stylesheet">
   <style>
     :root {
       /* Primary and Secondary Colors + more*/
-      --primary: rgb(54, 85, 93);
-      --secondary: rgb(89, 151, 155);
+      --primary: rgb(92, 39, 39);
+      --secondary: rgb(152, 68, 68);
       --p-text: rgb(225, 225, 225);
 
       /* Gradient Colors */
@@ -33,6 +34,7 @@
       /* --primary: rgb(54, 57, 93);
       --secondary: rgb(96, 89, 155); */
     }
+  </style>
   </style>
   <link href="styles/shapes.css" rel="stylesheet">
   <link href="styles/animations.css" rel="stylesheet">
@@ -67,8 +69,8 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a data-inviewport="navitem2" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a data-inviewport="navitem2" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Projects
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -111,8 +113,8 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a data-inviewport="navitem5" class="current nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
+            <a data-inviewport="navitem5" class="current nav-link dropdown-toggle" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Education
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -135,7 +137,7 @@
   </nav>
 
 
-
+  <!-- page content -->
   <main>
     <br>
     <h2 id="intro" data-inviewport="header">
@@ -143,45 +145,135 @@
     </h2>
     <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
       quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
-      voluptatem ullam magnam repudiandae maiores ipsam?</p>
-    <br>
-    <hr data-inviewport="horizontal-rule">
-    <h2 id="degree" data-inviewport="header">
-      <strong>College Degree</strong>
-    </h2>
-    <br>
-    <img data-inviewport="image" src="images/ubuntu-server.png" class="interior-img img-fluid rounded mx-auto d-block"
-      alt="Ubuntu Server Interface">
-    <br>
-    <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+      voluptatem ullam magnam repudiandae maiores ipsam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+      commodi, quos
       quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
       voluptatem ullam magnam repudiandae maiores ipsam?</p>
     <br>
+
+
+    <!-- School and degree -->
+    <div id="school">
+      <hr data-inviewport="horizontal-rule">
+      <br>
+      <img id="degree" data-inviewport="image" src="images/njit.png"
+        class="education-img img-fluid rounded mx-auto d-block" alt="NJIT Logo">
+      <br>
+      <h4 data-inviewport="header" style="text-align: center;">
+        <strong>B.S. in Information Technology - 2023</strong>
+      </h4>
+      <h5 data-inviewport="header" style="text-align: center; color: var(--secondary);">
+        <i>Network and Information Security Specialization</i>
+      </h5>
+      <br>
+      <h4 data-inviewport="image" style="text-align: center;">
+        <strong>GPA:</strong><span style="color: var(--p-text);"> 3.885</span>
+      </h4>
+      <br>
+      <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+        quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+        voluptatem ullam magnam repudiandae maiores ipsam? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Unde, commodi, quos
+        quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+        voluptatem ullam magnam repudiandae maiores ipsam?</p><br>
+    </div>
+
+    <br>
     <hr data-inviewport="horizontal-rule">
-    <h2 data-inviewport="header" id="raspberry-pi">
-      <strong>Stream Pi</strong>
-    </h2>
     <br>
-    <img data-inviewport="image" src="images/streampi1.png" class="interior-img img-fluid rounded mx-auto d-block"
-      alt="My Stream Pi">
-    <br>
-    <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
-      quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
-      voluptatem ullam magnam repudiandae maiores ipsam?</p>
-    <br>
-    <hr data-inviewport="horizontal-rule">
-    <h2 data-inviewport="header" id="this-website">
-      <strong>This Website</strong>
-    </h2><br>
-    <img data-inviewport="image" src="images/thiswebsite.png" class="interior-img img-fluid rounded mx-auto d-block"
-      alt="Website + GitHub Desktop">
-    <br>
-    <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
-      quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
-      voluptatem ullam magnam repudiandae maiores ipsam?</p>
-    <!-- Link to background gradient -->
-    <div class="background"></div>
-    <br><br>
+
+    <div id="classes">
+      <h2 id="class" data-inviewport="header">
+        <strong>Notable Classes</strong>
+      </h2>
+      <p data-inviewport="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quidem unde porro
+        praesentium ipsam veniam ad cupiditate fugiat vitae a! Quo tenetur facere enim similique quis quos nesciunt
+        doloribus delectus!</p>
+      <br>
+
+      <br>
+      <h4 data-inviewport="header" style="text-align: center;">
+        <strong>IT-491</strong>
+      </h4>
+      <h4 data-inviewport="header" style="text-align: center; color: var(--primary);">
+        Systems Integration
+      </h4>
+      <br>
+      <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+        quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+        voluptatem ullam magnam repudiandae maiores ipsam?</p><br>
+      <ul>
+        <li class="bullet" data-inviewport="bullet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          assumenda? Repellendus, quisquam nobis. </li>
+        <br>
+        <li class="bullet" data-inviewport="bullet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          assumenda? Repellendus, quisquam nobis. </li>
+      </ul>
+      <br>
+      <hr data-inviewport="horizontal-rule">
+      <br>
+      <h4 data-inviewport="header" style="text-align: center;">
+        <strong>IS-117</strong>
+      </h4>
+      <h4 data-inviewport="header" style="text-align: center; color: var(--primary);">
+        Intro to Website Development
+      </h4>
+      <br>
+      <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+        quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+        voluptatem ullam magnam repudiandae maiores ipsam?</p><br>
+      <ul>
+        <li class="bullet" data-inviewport="bullet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          assumenda? Repellendus, quisquam nobis. </li>
+        <br>
+        <li class="bullet" data-inviewport="bullet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          assumenda? Repellendus, quisquam nobis. </li>
+      </ul>
+      <br>
+      <hr data-inviewport="horizontal-rule">
+      <br>
+      <h4 data-inviewport="header" style="text-align: center;">
+        <strong>IT-490</strong>
+      </h4>
+      <h4 data-inviewport="header" style="text-align: center; color: var(--primary);">
+        IT Capstone Final Project
+      </h4>
+      <br>
+      <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+        quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+        voluptatem ullam magnam repudiandae maiores ipsam?</p><br>
+      <ul>
+        <li class="bullet" data-inviewport="bullet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          assumenda? Repellendus, quisquam nobis. </li>
+        <br>
+        <li class="bullet" data-inviewport="bullet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          assumenda? Repellendus, quisquam nobis. </li>
+      </ul>
+      <br>
+      <hr data-inviewport="horizontal-rule">
+      <br>
+      <h4 data-inviewport="header" style="text-align: center;">
+        <strong>IT-430</strong>
+      </h4>
+      <h4 data-inviewport="header" style="text-align: center; color: var(--primary);">
+        Ethical Hacking
+      </h4>
+      <br>
+      <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+        quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+        voluptatem ullam magnam repudiandae maiores ipsam?</p><br>
+      <ul>
+        <li class="bullet" data-inviewport="bullet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          assumenda? Repellendus, quisquam nobis. </li>
+        <br>
+        <li class="bullet" data-inviewport="bullet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          assumenda? Repellendus, quisquam nobis. </li>
+      </ul>
+    </div>
+
+
+
+
   </main>
 
 
