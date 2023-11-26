@@ -18,21 +18,24 @@
     crossorigin="anonymous"></script>
 
   <link href="styles/main.css" rel="stylesheet">
-  <link href="styles/shapes.css" rel="stylesheet">
-  <!-- Custom Contact Colors -->
   <style>
     :root {
       /* Primary and Secondary Colors + more*/
-      --primary: rgb(61, 93, 54);
-      --secondary: rgb(110, 155, 89);
+      --primary: rgb(54, 85, 93);
+      --secondary: rgb(89, 151, 155);
       --p-text: rgb(225, 225, 225);
 
       /* Gradient Colors */
       --dGradient: var(--primary);
       --lGradient: rgb(0, 0, 0);
+
+
+      /* --primary: rgb(54, 57, 93);
+      --secondary: rgb(96, 89, 155); */
     }
   </style>
-  <link rel="stylesheet" href="styles/animations.css">
+  <link href="styles/shapes.css" rel="stylesheet">
+  <link href="styles/animations.css" rel="stylesheet">
 
   <!-- Custom Font from Google (Ubunutu) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,8 +67,8 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a data-inviewport="navitem2" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
+            <a data-inviewport="navitem2" class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Projects
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -108,8 +111,8 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a data-inviewport="navitem5" class="current nav-link dropdown-toggle" href="#" id="navbarDropdown"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a data-inviewport="navitem5" class="current nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Education
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -122,7 +125,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a data-inviewport="navitem6" class="current nav-link active" href="contact.html">
+            <a data-inviewport="navitem6" class="nav-link active" href="contact.html">
               Contact
             </a>
           </li>
@@ -130,49 +133,62 @@
       </div>
     </div>
   </nav>
+
+
+
   <main>
     <br>
-    <h2 data-inviewport="header">
-      <strong>Ways To Contact Me</strong>
+    <h2 id="intro" data-inviewport="header">
+      <strong>Introduction</strong>
+    </h2>
+    <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+      quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+      voluptatem ullam magnam repudiandae maiores ipsam?</p>
+    <br>
+    <hr data-inviewport="horizontal-rule">
+    <h2 id="ubuntu-server" data-inviewport="header">
+      <strong>Ubuntu Server</strong>
+    </h2>
+    <br>
+    <img data-inviewport="image" src="images/ubuntu-server.png" class="interior-img img-fluid rounded mx-auto d-block"
+      alt="Ubuntu Server Interface">
+    <br>
+    <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+      quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+      voluptatem ullam magnam repudiandae maiores ipsam?</p>
+    <br>
+    <hr data-inviewport="horizontal-rule">
+    <h2 data-inviewport="header" id="raspberry-pi">
+      <strong>Stream Pi</strong>
+    </h2>
+    <br>
+    <img data-inviewport="image" src="images/streampi1.png" class="interior-img img-fluid rounded mx-auto d-block"
+      alt="My Stream Pi">
+    <br>
+    <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+      quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+      voluptatem ullam magnam repudiandae maiores ipsam?</p>
+    <br>
+    <hr data-inviewport="horizontal-rule">
+    <h2 data-inviewport="header" id="this-website">
+      <strong>This Website</strong>
     </h2><br>
-    <p data-inviewport="paragraph">Feel free to reach out to me with any questions, opportunities, or just to say
-      hello. I value communication and am always open to connecting with new people. You can use the form below to send
-      me a message. Don't forget to include your first name, last name, and email for a more personalized response. If
-      you're interested in staying updated on my latest endeavors, you can also check the subscribe box. Additionally,
-      you can reach me directly via email at <a class="web-links"
-        href="mailto:maximilianzjacob@gmail.com">maximilianzjacob@gmail.com</a>.
-      Connect with me on <a class="web-links" href="https://www.linkedin.com/in/yourlinkedinprofile/"
-        target="_blank">LinkedIn</a> for
-      more professional networking opportunities.</p>
+    <img data-inviewport="image" src="images/thiswebsite.png" class="interior-img img-fluid rounded mx-auto d-block"
+      alt="Website + GitHub Desktop">
+    <br>
+    <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
+      quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
+      voluptatem ullam magnam repudiandae maiores ipsam?</p>
     <!-- Link to background gradient -->
     <div class="background"></div>
     <br><br>
-    <h2 data-inviewport="header">
-      <strong>Reach Out</strong>
-    </h2><br>
-    <form data-inviewport="form" action="#">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value=""><br>
-
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value=""><br>
-
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" value=""><br>
-
-      <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
-      <label for="subscribe"> Subscribe for Updates:</label><br>
-
-      <input type="submit" value="Submit">
-    </form>
   </main>
 
 
   <!-- Footer -->
   <!-- Name, Terms of Use, and Privacy Policy -->
-  <div class="container-fluid">
-    <footer data-inviewport="footer"
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div data-inviewport="footer" class="container-fluid">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <div class="d-flex align-items-center">
         <span class="mb-3 mb-md-0 text-muted"><span>&copy; Maximilian Jacob, 2023</span> | <a href="#">Terms of Use</a>
           | <a href="#">Privacy Policy</a></span>
