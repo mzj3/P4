@@ -152,8 +152,9 @@ html {
 }
 
 .nav-item {
-    color: var(--p-re);
+    color: var(--p-text);
 }
+
 
 /* Override Bootstrap default text color for navbar links */
 .navbar-nav .nav-link {
@@ -312,6 +313,12 @@ main hr {
     width: 65%;
     margin: 0 auto;
 }
+/* ALT CSS */
+img { 
+    color: var(--p-text);
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
 
 .interior-img {
     width: 70%;
@@ -325,11 +332,11 @@ main hr {
     width: 50%;
 }
 
-.instructionsDesktop {
+.instructionsMobile {
     display: none;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
-.instructionsMobile {
+.instructionsDesktop {
     display: block;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
@@ -697,10 +704,10 @@ footer a:hover {
         width: 90%;
     }
 
-    .instructionsDesktop {
+    .instructionsMobile {
         display: block;
     }
-    .instructionsMobile {
+    .instructionsDesktop {
         display: none;
     }
     
