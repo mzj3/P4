@@ -1,60 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This script got from frontendfreecode.com -->
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
   <style>
-    [data-inviewport] {
-      /* THIS DEMO ONLY */
-      width: 100px;
-      height: 100px;
-      background: #0bf;
-      margin: 150vh 0;
+    .picture2 {
+      display: none;
     }
 
-    /* inViewport */
-    [data-inviewport="scale-in"] {
-      transition: 2s;
-      transform: scale(0.1);
+    .thumbnail:hover .picture1 {
+      display: none;
     }
 
-    [data-inviewport="scale-in"].is-inViewport {
-      transform: scale(1);
-    }
-
-    [data-inviewport="fade-rotate"] {
-      transition: 2s;
-      opacity: 0;
-    }
-
-    [data-inviewport="fade-rotate"].is-inViewport {
-      transform: rotate(180deg);
-      opacity: 1;
+    .thumbnail:hover .picture2 {
+      display: block;
     }
   </style>
-  <title>Intersection Observer Animation Demo</title>
+
 </head>
+
 <body>
-
-<!-- Scroll down... -->
-<div data-inviewport="scale-in"></div>
-<div data-inviewport="fade-rotate"></div>
-
-<script>
-  const inViewport = (entries, observer) => {
-    entries.forEach(entry => {
-      entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-    });
-  };
-
-  const Obs = new IntersectionObserver(inViewport);
-  const obsOptions = {}; // See: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#Intersection_observer_options
-
-  // Attach observer to every [data-inviewport] element:
-  document.querySelectorAll('[data-inviewport]').forEach(el => {
-    Obs.observe(el, obsOptions);
-  });
-</script>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-xs-4">
+        <div class="thumbnail">
+          <div class="picture1">
+            <img class="img-responsive" src="http://frontendfreecode.com/img/pizza.jpeg" alt="...">
+          </div>
+          <div class="picture2">
+            <img class="img-responsive" src="http://frontendfreecode.com/img/salad-square.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
