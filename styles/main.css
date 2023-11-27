@@ -325,8 +325,21 @@ main hr {
     width: 50%;
 }
 
+.instructionsDesktop {
+    display: none;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.instructionsMobile {
+    display: block;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 .picture2 {
     display: none;
+}
+
+.thumbnail {
+    width: 60%;
 }
 
 .thumbnail:hover .picture1 {
@@ -679,4 +692,16 @@ footer a:hover {
         /* Text color for the links */
 
     }
+
+    .thumbnail {
+        width: 90%;
+    }
+
+    .instructionsDesktop {
+        display: block;
+    }
+    .instructionsMobile {
+        display: none;
+    }
+    
 }

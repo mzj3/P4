@@ -21,8 +21,8 @@
   <style>
     :root {
       /* Primary and Secondary Colors + more*/
-      --primary: rgb(54, 85, 93);
-      --secondary: rgb(89, 151, 155);
+      --primary: rgb(91, 93, 54);
+      --secondary: rgb(155, 155, 89);
       --p-text: rgb(225, 225, 225);
 
       /* Gradient Colors */
@@ -153,12 +153,13 @@
       <strong>3D Printing Enthusiast</strong>
     </h4>
     <p data-inviewport="header" style="text-align: center; color: var(--p-text);">
-      <i>Hover picture for second image</i>
+      <i class="instructionsDesktop">Click picture for second image.</i>
+      <i class="instructionsMobile">Hover over picture for second image.</i>
     </p>
     <br>
     <div class="container">
       <div class="row">
-        <div class="thumbnail mx-auto d-block" style="width: 70%; ">
+        <div class="thumbnail mx-auto d-block" data-inviewport="image">
           <div class="picture1">
             <img class="img-responsive img-fluid rounded mx-auto d-block"
               src="images/printer-table.jpg" alt="3D Printer Table">
@@ -187,12 +188,13 @@
       <strong>Computer Builder and Troubleshooter</strong>
     </h4>
     <p data-inviewport="header" style="text-align: center; color: var(--p-text);">
-      <i>Hover picture for second image</i>
+      <i class="instructionsDesktop">Click picture for second image.</i>
+      <i class="instructionsMobile">Hover over picture for second image.</i>
     </p>
     <br>
     <div class="container">
       <div class="row">
-        <div class="thumbnail mx-auto d-block" style="width: 70%; ">
+        <div class="thumbnail mx-auto d-block"  data-inviewport="image">
           <div class="picture1">
             <img class="img-responsive img-fluid rounded mx-auto d-block"
               src="images/pc-off.jpg" alt="Computer Off">
@@ -204,6 +206,7 @@
         </div>
       </div>
     </div>
+    
     <br>
     <p data-inviewport="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, commodi, quos
       quidem ducimus mollitia neque corporis accusantium sunt doloribus nisi temporibus asperiores molestias adipisci,
