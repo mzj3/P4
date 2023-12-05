@@ -266,7 +266,9 @@ body {
 
 
     background: linear-gradient(-45deg, var(--dGradient) 0%, var(--lGradient) 100%);
-    background-size: 900% 900%;
+
+    /* Good ratio for Desktop */
+    background-size: 900% 2200%; 
     animation: gradientInf 90s ease-in-out infinite;
 }
 
@@ -625,7 +627,7 @@ footer a:hover {
         height: 100%;
         margin: 0;
         background: linear-gradient(-45deg, var(--lGradient) 0%, var(--dGradient) 100%);
-        background-size: 900% 1500%;
+        background-size: 900% 2200%;
     }
 
     /* Adjust the width for smaller screens */
