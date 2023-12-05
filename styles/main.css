@@ -131,6 +131,9 @@ html {
 }
 
 /* -----------------------------NAVBAR ELEMENTS--------------------------------- */
+nav {
+    height: 70px;
+}
 .homeNav {
     /* height: 70px; */
     width: 95%;
