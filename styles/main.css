@@ -474,7 +474,7 @@ cp {
 }
 
 .carousel-indicators {
-    transform: translateY(-10px);
+    transform: translateY(50px);
 }
 
 /* Styles for the social media icons */
@@ -695,7 +695,7 @@ footer a:hover {
     }
 
     .carousel-indicators {
-        transform: translateY(4px);
+        transform: translateY(40px);
     }
 
     cp {
