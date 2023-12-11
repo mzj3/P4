@@ -281,8 +281,11 @@ main {
     margin: 0 auto;
 }
 
+main h1,
 main h2,
+main h3,
 main h4,
+main h5,
 main h6 {
     opacity: 1;
     color: var(--secondary);
@@ -295,8 +298,11 @@ main p {
 
 }
 
+main h1,
 main h2,
+main h3,
 main h4,
+main h5,
 main h6,
 main p {
     width: 70%;
@@ -634,15 +640,21 @@ footer a:hover {
     }
 
     /* Adjust the width for smaller screens */
+    main h1,
     main h2,
+    main h3,
     main h4,
+    main h5,
     main h6,
     main p {
         width: 80%;
     }
 
+    main h1,
     main h2,
+    main h3,
     main h4,
+    main h5,
     main h6 {
         text-align: center;
     }
