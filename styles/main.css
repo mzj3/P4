@@ -647,7 +647,7 @@ footer a:hover {
     main h5,
     main h6,
     main p {
-        width: 80%;
+        width: 90%;
     }
 
     main h1,
@@ -660,6 +660,10 @@ footer a:hover {
     }
 
     main p {
+        font-size: 85%;
+    }
+    main .bullet {
+        width: 80%;
         font-size: 90%;
     }
 
