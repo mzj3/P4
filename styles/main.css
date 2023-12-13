@@ -309,7 +309,18 @@ main p {
     margin: 0 auto;
     z-index: 1;
 }
-
+main ul{
+    list-style: none;
+}
+main .bullet::before {
+    font-size: 120%;
+    content: "\2022";
+    color: var(--secondary);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
 main .bullet {
     color: var(--p-text);
     opacity: 0;
@@ -663,8 +674,8 @@ footer a:hover {
         font-size: 85%;
     }
     main .bullet {
-        width: 80%;
-        font-size: 90%;
+        width: 90%;
+        font-size: 85%;
     }
 
     .custom-card {
