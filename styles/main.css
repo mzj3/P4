@@ -677,6 +677,10 @@ footer a:hover {
         margin-bottom: 2px;
         /* Custom margin */
     }
+    .custom-card .card-text {
+        font-size: 90%;
+        /* Custom text color for the content */
+    }
 
     .interior-img {
         width: 90%;
