@@ -354,6 +354,10 @@ img {
     width: 50%;
 }
 
+.teampic {
+    width: 70%;
+}
+
 .instructionsMobile {
     display: none;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
@@ -417,7 +421,7 @@ h5 a:hover {
 cp {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards, slideIn 2s ease-out;
-    animation-delay: 1s;
+    animation-delay: .2s;
 }
 
 /* Custom styles for the card */
@@ -726,6 +730,10 @@ footer a:hover {
         width: 80%;
         margin: 0 auto;
 
+    }
+
+    .teampic {
+        width: 90%;
     }
 
     footer a,
